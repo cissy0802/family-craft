@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doing Together: Repair &amp; Take-Apart</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+.container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:40px 0 24px}
+header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
+header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
+.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
+.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
+.card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
+.tags{margin:12px 0 16px}
+.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#e6f4ee;color:#3d8c6a}
+.sec{margin:14px 0}
+.sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
+.sec.age3 h3::before{background:#f0a030}
+.sec.age9 h3::before{background:#4aa37a}
+.sec.both h3::before{background:#e8743b}
+.sec.why h3::before{background:#9b8cd0}
+.sec p{font-size:0.95rem;color:#4a4031}
+.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
+.safety b{color:#d04a2a}
+.diagram{display:block;margin:14px auto;max-width:360px}
+ul{margin:4px 0 4px 20px}
+li{font-size:0.94rem;margin:3px 0}
+.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#3f5a4d}
+footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Doing Together: Repair &amp; Take-Apart</h1>
+  <div class="meta">2026-06-21 · Day 9</div>
+</header>
+
+<div class="intro">This time we don't build anything new — we go the other way and open old things up to see what's hiding inside. In a kid's world a toy is "magic that moves"; but the moment she unscrews the back cover herself and sees the motor, the gears, those little wires, the magic turns into "oh, so THAT's how it works." That itch to "just open it and look" is what engineers and repair people looked like as kids. We split it into 4 things: take apart an old toy you were going to toss, fix something broken around the house, meet every tool in the toolbox one by one, and give an old jar or cardboard box a second life. We're not chasing "fully fixed" or "cleanly disassembled" — the point is <b>that quiet confidence of "I can understand this, and I can make it better."</b> Prep is simple: one screwdriver, a small box for the parts, newspaper on the table, and go.</div>
+
+<!-- Activity 1 -->
+<div class="card">
+  <h2>1. Take a Toy Apart<span class="en">Take a Toy Apart</span></h2>
+  <div class="tags"><span class="tag">⏱ 20–30 min</span><span class="tag g">old toy + screwdriver</span></div>
+  <div class="sec">
+    <h3>Prep &amp; Safety</h3>
+    <p>Find a battery toy that's <b>already broken and headed for the trash</b> — ones that buzz, move, or light up are the most fun (an old RC car, a toy keyboard, a noise-making toy, a dead alarm clock, an old mouse all work). Tools: one Phillips (cross-head) screwdriver, and a small box just for the screws you remove (this matters a lot — lose one screw and it'll never go back together). Pop the batteries out first and set them aside, then hunt down the screws, open the back cover, and inside you'll usually find: a small motor, a few gears, a green circuit board, a speaker, and a tangle of wires.</p>
+    <div class="safety"><b>Safety:</b> Only open <b>battery-powered</b> small toys. <b>Never open anything that plugs into the wall — no microwaves, TVs, cameras, or old power supplies</b> — these hold large capacitors that can store dangerous charge even after being unplugged. No exceptions. The screwdriver tip is sharp; point it down and never at anyone. The <b>small parts and button batteries are a serious choking/swallowing hazard for a 3-year-old</b> — a swallowed button battery can burn through the esophagus, so supervise the whole time and clear them away the moment you're done. Metal edges and broken bits can cut; remind them not to touch broken edges. Don't pick at a leaking battery with bare hands — grab it through a tissue.</div>
+  </div>
+  <svg class="diagram" viewBox="0 0 360 110" xmlns="http://www.w3.org/2000/svg" aria-label="Three steps to take a toy apart">
+    <rect x="14" y="25" width="70" height="55" rx="6" fill="#fdf0e6" stroke="#e8743b" stroke-width="2"/>
+    <circle cx="30" cy="38" r="3" fill="#8a7a66"/><circle cx="68" cy="38" r="3" fill="#8a7a66"/>
+    <circle cx="30" cy="68" r="3" fill="#8a7a66"/><circle cx="68" cy="68" r="3" fill="#8a7a66"/>
+    <text x="49" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">① find the corner screws</text>
+    <path d="M150 30 l18 0 0 -10 8 0 0 26 -8 0 0 -10 -18 0 z" fill="#4aa37a"/>
+    <line x1="176" y1="48" x2="200" y2="48" stroke="#8a7a66" stroke-width="2"/>
+    <circle cx="158" cy="70" r="4" fill="#e8743b"/><circle cx="170" cy="70" r="4" fill="#e8743b"/>
+    <text x="170" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">② unscrew, save the screws</text>
+    <circle cx="285" cy="42" r="14" fill="#fff" stroke="#4aa37a" stroke-width="2"/>
+    <circle cx="285" cy="42" r="4" fill="#4aa37a"/>
+    <rect x="265" y="62" width="44" height="22" rx="3" fill="#e6f4ee" stroke="#3d8c6a"/>
+    <text x="287" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">③ look inside: motor · board</text>
+  </svg>
+  <div class="sec age3"><h3>Age 3</h3><p>Her job is "spin it out + sort it." You loosen each screw half a turn first, then let her use the screwdriver (or just her fingers) to spin it the rest of the way until it drops out — that "looser, looser, plink!" moment delights her for ages. Let her be the "parts manager," sorting the screws and gears into different compartments of the box by size or color. She can also spin the gears and press the buttons to hear if anything still makes noise. No small part goes in the mouth — watch that the entire time.</p></div>
+  <div class="sec age9"><h3>Age 9</h3><p>Her job is "lead the teardown + draw the map." She picks the screwdriver, unscrews in order, and tracks which screw came from where (she can sketch a diagram and mark each screw as she removes it — that's a real repair-tech skill). Challenge: find the motor, trace its two wires, and figure out why it spins when the battery's connected. Why are the gears different sizes meshed together (to change speed/force)? Then try putting part of it back together — to feel how "taking apart is easy, reassembling is the hard part."</p></div>
+  <div class="sec both"><h3>Sisters Together</h3><p>Big sister is the "teardown lead," working the screwdriver, lifting parts out one by one and naming what each is and does. Little sister is the "parts manager," catching each part, sorting it into the box, and handing over the tools requested (no overlap: working the tools is the big one's job; sorting and handing over is the little one's). Together they reduce a toy to a pile of pieces, then lay every part out in a row in the order it came off — like a crime scene.</p></div>
+  <div class="sec why"><h3>The Why + a Twist</h3><p>A toy that moves and beeps really comes down to three core things: the battery supplies power, the motor turns power into spinning, and the gears make that spin faster, slower, or change direction — even the most complex machine is just these combined. Open one up once and a "machine" stops being a black box. Twist: keep the little motor, bulb, and wires you pulled out; next time, with a single battery, try lighting that bulb or spinning that motor yourself — moving from "taking apart" to "building up."</p></div>
+</div>
+
+<!-- Activity 2 -->
+<div class="card">
+  <h2>2. Fix Something That's Broken<span class="en">Fix Something That's Broken</span></h2>
+  <div class="tags"><span class="tag">⏱ 15–20 min</span><span class="tag g">whatever's broken</span></div>
+  <div class="sec">
+    <h3>Prep &amp; Safety</h3>
+    <p>Every home has a few things people just "put up with": a wobbly chair leg, a loose drawer handle, a screw that won't tighten, a stuck zipper, a flaky remote, a toy with a snapped-off corner. Pick one and <b>"diagnose" it together first</b> — why is it broken? Is a screw loose, a part missing, or is it just dirty and jammed? Then treat the cause: tighten loose screws, clean dirty contacts (rub the remote's battery-compartment metal with an eraser and it often comes back to life), lubricate a stuck zipper by rubbing pencil lead (graphite) on the teeth, glue a snapped piece. The heart of repair isn't skill — it's <b>"figure out where it's broken first."</b></p>
+    <div class="safety"><b>Safety:</b> Super glue (instant/two-part glue) is <b>an adults-only job</b> — it bonds skin and eyes and is dangerous; neither the 9- nor the 3-year-old touches instant glue. If something needs gluing, the adult does it while the child only holds and aligns. Needle-and-thread repairs wait for the sewing day, or the adult handles them. The 3-year-old <b>touches no glue and no sharp tools</b> — only diagnosing and holding. Erasing contacts, tightening screws, and pencil-lubricating are safe, so let the kids do those.</div>
+  </div>
+  <div class="sec age3"><h3>Age 3</h3><p>Her job is "diagnose + help hold." As your "little doctor," have her point out "where's it broken?" — pressing and wiggling to find the trouble (kids are surprisingly good at sensing "something's off"). During the fix she's the "holder": you turn the screw, she keeps the object steady with both hands; or for the last few turns of an already-aligned screw, let her finger it down to the end, to feel "I fixed it."</p></div>
+  <div class="sec age9"><h3>Age 9</h3><p>Her job is "diagnose solo + do the fix." Hand her the broken thing and, before rushing to fix, have her play detective: what's broken? why did it break? what tool do I need? Then she picks the tool and does it. Challenge her to fix something actually in use (tighten the wobbly chair, revive the flaky remote) — fixing it helps the whole family, and that beats a craft project for satisfaction. Not fixing it is fine too; being able to explain "here's where it broke, here's what I tried" is already a win.</p></div>
+  <div class="sec both"><h3>Sisters Together</h3><p>Big sister is the "repair tech," diagnosing and doing the work. Little sister is the "assistant," holding things steady, handing over the tool the big one names, and testing whether it's fixed (no overlap: judging and doing is the big one's; holding, handing, and testing is the little one's). Together they fix one item, then run a joint "inspection" — wiggle it, press it, use it, confirm it really doesn't wobble or really beeps — then high-five.</p></div>
+  <div class="sec why"><h3>The Why + a Twist</h3><p>"Broken" often isn't really dead — usually a single screw is loose, a spot is dirty, or one contact came apart. Find that point and the fix is often just a move or two. That's why people who "can fix things" stay calm: they trust that a problem can be broken down and located. Twist: do a household "inspection sweep," make a "to-fix list," and knock out one item a week — let the kids feel how a home gets cared for, piece by piece.</p></div>
+</div>
+
+<!-- Activity 3 -->
+<div class="card">
+  <h2>3. Meet the Toolbox<span class="en">Meet the Toolbox</span></h2>
+  <div class="tags"><span class="tag">⏱ 15 min</span><span class="tag g">household tools</span></div>
+  <div class="sec">
+    <h3>Prep &amp; Safety</h3>
+    <p>Haul out the family toolbox and meet each tool one by one — this is a kid's first lesson in "extensions of the human hand." The usual suspects: <b>Phillips/flat-head screwdrivers</b> (turn screws — the tip shape has to match the slot in the screw head), a <b>hammer</b> (drive nails), <b>pliers</b> (grip, cut, twist), a <b>tape measure</b> (measure length), a <b>wrench</b> (turn nuts), <b>tape</b> (temporary fixes). Pick each one up: what's it called? what's it for? how do you hold it safely? Games: "tool matching" (match the screwdriver to its screw, the nail to the hammer), or "measure the whole house" (use the tape to measure the table, heights, little sister's foot).</p>
+    <div class="safety"><b>Safety:</b> <b>The hammer and real nails are used by the adult or the 9-year-old under supervision</b>; the 3-year-old never touches the hammer or nails (smashed fingers, nails that stab). Pliers pinch; a tape measure snapping back can catch fingers or hit the face — pull it out and reel it in slowly, holding it. Screwdriver tip points down, never at anyone, never carried while running. Every tool <b>goes back in its place after use, never left lying around</b> — that's rule one of tool safety. The 3-year-old only names tools, uses the tape, and puts things away — nothing with an edge or point.</p></div>
+  </div>
+  <div class="sec age3"><h3>Age 3</h3><p>Her job is "name them + measure + put away." Hand her the safe tools (tape measure, tape, plastic bits), teach her the names, and play measuring: how long is the table, how tall is she, how plump is the teddy bear — the numbers don't matter, she just loves the "pull it out, stick it on, take a look" routine. When done, have her put each tool back in its spot in the box as the "put-away helper."</p></div>
+  <div class="sec age9"><h3>Age 9</h3><p>Her job is "learn it right + read it accurately." Learn how a screwdriver tip matches a screw slot, how to read a tape measure to the millimeter, the several uses of pliers. Challenge: grab a scrap board or thick corrugated cardboard as a "practice board," and drive screws in and back out until it feels natural; or measure around a room with the tape and sketch a simple floor plan with the dimensions on it. She can also be little sister's teacher, naming each tool and its use.</p></div>
+  <div class="sec both"><h3>Sisters Together</h3><p>Big sister is the "tool teacher," demonstrating how each tool is used and held safely. Little sister is the "tool runner," finding the named tool and handing the right one over (no overlap: demonstrating and using is the big one's; listen-find-fetch-and-return is the little one's). Play "tool express": big sister calls "screwdriver!" "tape measure!" and little sister races to find and hand it over — naming practice plus quick reflexes.</p></div>
+  <div class="sec why"><h3>The Why + a Twist</h3><p>Every tool was invented for "something the hand can't do alone": a hand can't turn a stiff screw, so the screwdriver's long handle gives you leverage; a hand can't measure precisely, so the tape records the number for you; a hand can't crush something hard, so pliers use leverage to do the squeezing. Knowing tools means knowing how humans solve problems with clever leverage. Twist: play "what if we didn't have this tool?" — can you turn a screw without a screwdriver? (try a coin, a fingernail) Let the kids feel just how much the tool actually helps.</p></div>
+</div>
+
+<!-- Activity 4 -->
+<div class="card">
+  <h2>4. Give Old Things a Second Life<span class="en">Give Old Things a Second Life</span></h2>
+  <div class="tags"><span class="tag">⏱ 20–30 min</span><span class="tag g">old jar / box</span></div>
+  <div class="sec">
+    <h3>Prep &amp; Safety</h3>
+    <p>"Use it to the fullest" means turning what you'd throw away into something useful again. Dig through the recycling and you'll find loads of material: a <b>glass or tin jar</b> → wash it for a pencil cup, storage jar, or bean-sprout pot; a <b>cardboard box</b> → cut into a drawer organizer, a toy garage, a little house; an <b>old T-shirt</b> → cut into rags or a simple tote bag; <b>bottle caps</b> → game pieces or a glued-on picture; an <b>egg carton</b> → compartments for small parts (perfect for the screws and gears from Activity 1). Pick one or two, first ask "what could this become," then wash, cut, assemble, and decorate.</p>
+    <div class="safety"><b>Safety:</b> Cutting thick cardboard, trimming jar rims, and any utility-knife work are <b>done by the adult or the 9-year-old with the right scissors</b>; the utility knife is adult-only. <b>The rims of glass and tin jars can be very sharp</b> — the adult feels them first and tapes over sharp edges if needed; tin rims especially. The 3-year-old <b>touches no knife, scissors, or sharp rim</b> — only decorating and filling. Wash and dry every container before reusing it, so no food residue is left to draw bugs.</div>
+  </div>
+  <div class="sec age3"><h3>Age 3</h3><p>Her job is "decorate + fill." You cut the box or jar; she beautifies it: stickers, colored tape, drawings, glued-on paper scraps. This is her strongest stretch — it looks great however she does it. Then put the finished organizer to use: have her sort small toys, crayons, and the parts from Activity 1 into it as the "tidying champ" — upcycling and cleaning the room in one go.</p></div>
+  <div class="sec age9"><h3>Age 9</h3><p>Her job is "design + measure-and-cut + assemble." First decide what the old thing should become, measure it, cut shapes with scissors, and fit them together. Challenge: turn a cardboard box into a genuinely usable multi-compartment organizer, or build a doll a little house with a door and windows. She has to solve real problems: how to make the box stand steady, the dividers slot in firmly, the door open and close — that's exactly what an engineer does.</p></div>
+  <div class="sec both"><h3>Sisters Together</h3><p>Big sister is the "structure builder," cutting, fitting, and raising the frame. Little sister is the "decorator," coloring the finished piece, adding stickers and details (no overlap: scissors and assembly are the big one's; beautifying and filling are the little one's). Together they turn a big box into a storage house or toy garage — big sister sets the structure, little sister does the façade — then both load the loose toys in: the room's tidier and the project's in use.</p></div>
+  <div class="sec why"><h3>The Why + a Twist</h3><p>"Trash" is often just "something in the wrong place that hasn't found its new use yet." Seen from another angle, an empty jar is a storage box, a flowerpot, a pencil cup — reusing old things saves money, makes less trash, and lets kids believe an object's value can be rediscovered. Twist: set a small "this week, don't buy — remake an old one" goal; when you need a pencil cup or organizer, dig through the recycling and make one first, turning "use it fully" into a family habit.</p></div>
+</div>
+
+<div class="pick">
+  <h2>Pick Just One This Week</h2>
+  <p>If you do only one thing, the one most up a kid's alley is <b>take a toy apart</b> — grab a battery toy that's headed for the trash anyway, one screwdriver is all you need, nothing to buy. The urge to "open it and see inside" is innate, and the moment she unscrews the back cover and sees a motor and gears for the first time, her eyes light up. The 3-year-old spins out screws and sorts parts; the 9-year-old leads the teardown, draws the map, and studies why the motor turns. Cleanup is easy too: screws and parts into one box, the shell straight into recycling. Trade one screwdriver for a real lesson in "how machines actually work" — the best entry point of the week.</p>
+</div>
+
+<footer>Process over product, presence over teaching.</footer>
+</div>
+</body>
+</html>
