@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一起做：地图与方向</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+.container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:40px 0 24px}
+header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
+header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
+.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
+.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
+.card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
+.tags{margin:12px 0 16px}
+.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#e6f4ee;color:#3d8c6a}
+.sec{margin:14px 0}
+.sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
+.sec.age3 h3::before{background:#f0a030}
+.sec.age9 h3::before{background:#4aa37a}
+.sec.both h3::before{background:#e8743b}
+.sec.why h3::before{background:#9b8cd0}
+.sec p{font-size:0.95rem;color:#4a4031}
+.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
+.safety b{color:#d04a2a}
+.diagram{display:block;margin:14px auto;max-width:360px}
+ul{margin:4px 0 4px 20px}
+li{font-size:0.94rem;margin:3px 0}
+.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#3f5a4d}
+footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>一起做：地图与方向</h1>
+  <div class="meta">2026-07-14 · Day 27</div>
+</header>
+
+<div class="intro">孩子每天在家里跑来跑去，却从没「从上往下」看过自己的家。这一期玩的是「空间」——先把家画成一张鸟瞰地图，再学分东南西北，然后用地图玩寻宝，最后用口令玩导航。材料都极简单：一张纸、一支笔、几件家里的小东西。别追求画得准，重点是让孩子第一次意识到：「我在哪」「往哪走」是可以画下来、说清楚的。这就是空间感的种子。<b>本期几乎没有安全风险，只需留神寻宝时别乱跑磕碰、户外认方向时防晒。</b></div>
+
+<!-- 活动 1 -->
+<div class="card">
+  <h2>1. 画一张「家的地图」<span class="en">Draw a Map of Home (Bird's-Eye View)</span></h2>
+  <div class="tags"><span class="tag">⏱ 15–20 分钟</span><span class="tag g">材料：大纸 + 彩笔</span><span class="tag">✅ 零风险</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>材料：一张大点的纸（A4 或更大）、几支彩笔。玩法：画一张「从天花板往下看」的家——先画客厅的大方框，再往里添沙发、电视、餐桌、门、每个房间。关键是引导孩子想象「假如我是天花板上的小鸟往下看，沙发是什么形状？」——不是从正面画，而是画俯视的轮廓（沙发=长方块、圆桌=圆圈）。画完贴墙上，「家庭地图」就有了。</p>
+    <div class="safety"><b>安全：</b>本活动零风险，就是画画。唯一提醒：让孩子在桌上画，别趴地上一边画一边被人踩到笔；彩笔别让 3 岁往嘴里放。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>画大框架、标房间名归 9 岁；涂色、贴小图标归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她理解不了「俯视图」，就让她当「涂色小工」：姐姐画好房间的框，她往里涂颜色（客厅涂黄、卧室涂蓝），再用小贴纸标出「我的床在这里」。拉着她的手指在真家里走一圈，走到哪就在纸上点一下：「走到厨房啦——地图上点一下厨房。」把「走到哪」和「纸上哪」对上，就是她最大的收获。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她是「制图师」：想清楚俯视的轮廓，把房间相对位置画对——客厅在中间、厨房在左、卧室在右，门开在哪。挑战她加「比例感」：客厅比卫生间大，画在纸上也得大些。再给地图加「图例」（小方块=床、小圆=桌子）。问她：<b>为什么地图都从上往下画？</b>（从正面画，后面的东西会被前面挡住、说不清谁在谁旁边；从上往下看每样东西位置一目了然、互不遮挡，所以所有真地图都是「鸟瞰」的，两三句够答。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当「制图师」搭骨架、定位置，妹妹当「装饰师」涂色贴标（互不抢活：画结构归姐姐，上色归妹妹）。画完玩个验证游戏：一个人说「我站在电视机前面」，另一个在地图上把手指点到那位置——点对了击掌。地图不只画出来，还要能「用」起来。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>地图的本质是「把三维的真实世界，压扁成二维的一张纸」，还得保住东西的相对位置。人天生从「正面」认东西，转成「俯视」得动一次脑子——这一转就是空间思维的起点。变式：下次出门前画一张「从家到小区门口」的路线图，让孩子拿着当「导航员」，走一段对一段。</p></div>
+</div>
+
+<!-- 活动 2 -->
+<div class="card">
+  <h2>2. 认方向：东南西北怎么分<span class="en">Which Way Is Which: Finding North</span></h2>
+  <div class="tags"><span class="tag">⏱ 15 分钟</span><span class="tag g">材料：一根小棍 + 阳光（或指南针 App）</span><span class="tag">☀️ 户外/窗边</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>材料：一根筷子或小木棍、几块小石头做记号；有太阳最好，阴天就用手机指南针 App。玩法（晴天版）：把小棍插在阳台或院子空地上，在影子顶端摆一块石头做记号；<b>过 15–20 分钟再来看</b>，影子动了，在新顶端再摆一块。两块石头连成一条线，就是「东—西」方向（先摆的靠西、后摆的靠东，因为太阳从东往西走、影子反着来）。站上去面朝北，右手是东、左手是西、背后是南。</p>
+    <div class="safety"><b>安全：</b>户外注意<b>防晒、戴帽子、别直视太阳</b>——看影子就好，绝不抬头盯太阳。小棍插稳别扎脚。等影子的这 15 分钟，正好先去做活动 1。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>插棍、连线、判断东西南北归 9 岁；摆石头记号、当「小闹钟」提醒该看影子了归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她当「影子记号员」：姐姐说「影子头在这里」，她就放一块小石头。她理解不了东南西北，但能直观看到一件神奇的事——<b>影子会自己悄悄移动</b>。让她隔一会儿看一眼，惊呼「影子跑啦！」就够了。再教她朝太阳伸手：「太阳会慢慢搬家」，把方向变成能用小手比划的东西。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她是「方向侦探」：插棍、摆记号、连东西线、推出四个方向，再<b>标到活动 1 的家庭地图上</b>（角上画个「指北针」箭头）。挑战她记口诀「上北下南、左西右东」——这是地图的规矩，真实世界则靠太阳或指南针去对。问她：<b>影子为什么会移动、指南针为什么总指南北？</b>（影子动，是因为地球自转、太阳看起来从东走到西；指南针指南北，是因为地球本身是块大磁铁，小磁针会顺着地球磁场排好队，两三句够答。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当「侦探」判断连线，妹妹当「记号员 + 计时员」摆石头、隔一会儿喊「该看影子啦」（互不抢活：判方向归姐姐，做记号归妹妹）。方向定好后玩「指方向」游戏：喊「东！」两人一起转身面朝东，谁转错谁做个鬼脸。把抽象的方向变成全身一起转的游戏。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>方向是空间里的「绝对坐标」——不管你怎么转身，北永远是北。太阳定向是人类最古老的本事，指南针则让方向在阴天黑夜也能找到。变式：晚上找北极星——先找北斗七星（像个大勺子），顺着勺口两颗星连线往外延伸约五倍，那颗不太亮但一直不动的星就是北极星，正下方就是北。古人夜里赶路全靠它。</p></div>
+</div>
+
+<!-- 活动 3 -->
+<div class="card">
+  <h2>3. 藏宝与寻宝：用地图找东西<span class="en">Treasure Hunt: Follow the Map</span></h2>
+  <div class="tags"><span class="tag">⏱ 20 分钟</span><span class="tag g">材料：纸笔 + 一件「宝物」</span><span class="tag">🏃 室内跑动</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>材料：几张小纸条、一支笔、一件「宝物」（一块糖、一个小玩具都行）。玩法：一个人当「藏宝人」把宝物藏起来，画一张<b>寻宝地图</b>——可直接用活动 1 的家庭地图，在藏宝点画个大「×」；进阶玩「线索接力」：第一张纸提示「去冰箱」，冰箱上贴第二张「看沙发底下」，一步步引到宝物。另一人拿地图去找，找到就换人藏，玩几轮。</p>
+    <div class="safety"><b>安全：</b>唯一风险是<b>找宝时太兴奋乱冲、磕桌角滑倒</b>——开始前约定「走着找、不许跑」。宝物别藏在要爬高、翻抽屉夹手、或进厨房动灶台的危险位置。宝物若是糖果，找到后先问大人、别噎着 3 岁。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>画地图、设计线索归 9 岁；藏宝、找宝、当「小侦探」归 3 岁（和姐姐一队）。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>这是四个活动里她最兴奋的一个。她看不懂地图，就让姐姐拿地图当「领队」，她当「小侦探」冲在前面翻找。也可以给她一张「一步地图」：画个大箭头指向沙发，她顺着走过去掀开就找到。找到宝物的欢呼就是最好的奖励。轮到她藏宝时帮她画个「×」，她会觉得掌握了大秘密。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她是「藏宝大师 + 出题人」：设计寻宝路线，画一张别人看得懂的地图，或写「线索接力」谜题（「我很冷，肚子里装吃的」=冰箱）。挑战她把活动 2 的方向用进去：线索写「站在电视前朝北走三步，往东看」，逼她把地图、方向、位置全串起来。问她：<b>为什么真宝藏地图常画指北针和比例尺？</b>（有指北针，别人才知道地图的「上」对着真实世界哪个方向；有比例尺，才知道图上一小段等于实际多少距离——没这两样就没法照着走，两三句够答。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>最好玩的组队：<b>姐妹一队 vs 爸妈一队</b>，轮流藏和找。姐姐当队长读地图、指路，妹妹当先锋冲上去翻找（互不抢活：读图指挥归姐姐，翻找归妹妹）。姐姐得学会「带着妹妹一起找」——把线索念给妹妹听、让妹妹去掀开那一下。找到宝物两人一起举高欢呼，比自己找到更开心。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>寻宝把「看地图」变成「用地图」——孩子得把纸上的「×」和真实世界的角落对应起来，这个「纸→现实」的翻译正是读地图的核心能力。变式：把寻宝搬到小区或公园，画一张更大的「户外寻宝图」，用真实的树、长椅、滑梯当地标，方向感从家里放大到整个小区。</p></div>
+</div>
+
+<!-- 活动 4 -->
+<div class="card">
+  <h2>4. 口令导航：我说你走<span class="en">Voice Navigation: I Say, You Move</span></h2>
+  <div class="tags"><span class="tag">⏱ 10–15 分钟</span><span class="tag g">材料：几件障碍物（抱枕/椅子）</span><span class="tag">✅ 免材料</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>材料：几个抱枕、玩偶摆地上当「障碍」，桌上放一个玩具当「终点」。玩法：一个人当「机器人」，只听三种口令——「前进几步」「左转」「右转」；另一个当「指挥官」，光靠嘴把机器人从起点一步步指挥到终点、绕开障碍。机器人只能严格照口令走，说错就重来。这是把「方向词」和「步数」真正用起来、特别锻炼「站在别人角度看方向」的游戏。</p>
+    <div class="safety"><b>安全：</b>障碍物用<b>软的（抱枕、毛绒玩具）</b>，别用尖角硬物。玩进阶「蒙眼版」时，机器人蒙眼走，大人必须<b>全程守在旁边随时能扶</b>，速度要慢，绝不在有楼梯、桌角处玩蒙眼版。3 岁不玩蒙眼版。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>当精确的「指挥官」发口令归 9 岁；当「机器人」听令走、当被指挥的一方归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她当「小机器人」最合适——听懂「往前走」「停」就能玩。别要求她分左右，就玩「前进和停」：姐姐喊「走走走——停！」她像开关一样照做，会咯咯笑个不停。反过来让她当一次「指挥官」也行，哪怕她只会用手指「往那边！」——用手指方向就是在表达空间，已经很棒了。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她当「指挥官」是主角：在脑子里预演路线，算好「前进 3 步、右转、再前进 2 步」，还得<b>站在机器人角度想「它的左是我哪边」</b>——这是最难也最长本事的一点。挑战她只用口令、不用手指，把机器人精准送到终点。问她：<b>为什么你的「左」和对面机器人的「左」不是同一边？</b>（「左右」跟着身体走，你俩面对面站朝向相反，你的左手正对着他的右手边——所以指挥别人得换成「他的」左右，这叫「换位思考」，指路老出错就栽在这儿，两三句够答。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当「指挥官」，妹妹当「机器人」，先玩简单的「前进—停」，妹妹熟了再加「转弯」（互不抢活：发口令归姐姐，听令行动归妹妹）。玩顺了交换：让妹妹用手指瞎指挥姐姐这个「机器人」，姐姐夸张照做，妹妹会笑翻。角色一换，两人都体会到「指挥」和「被指挥」是两种脑子。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>「前进 3 步、右转」就是最原始的编程——把一件事拆成精确指令，机器一板一眼照做，说错一步就到不了，导航软件、扫地机器人干的都是这活。而「换位想左右」练的是空间想象力，认路、看地图都躲不开。变式：把口令写在纸卡上（前进/左转/右转各画个箭头），先排好一串卡片再让机器人「执行」，就成了不插电版的「编程闯关」，和 Day 31 正好接上。</p></div>
+</div>
+
+<div class="pick">
+  <h2>本周就选一个</h2>
+  <p>只挑一个就做 <b>「藏宝与寻宝」</b>——不用准备，一张纸画个「×」、藏一颗糖，姐妹俩就能疯玩半小时。它把「看地图」变成「用地图找到真东西」，3 岁兴奋到冲在最前，9 岁则在画地图、设线索里悄悄把方向和位置全用上了。等哪个晴天的周末，再带她们去阳台用小棍的影子定一次东南西北，把「方向」这件抽象的事第一次踩在脚下。</p>
+</div>
+
+<footer>过程比结果重要，陪伴比教育重要。</footer>
+</div>
+</body>
+</html>
