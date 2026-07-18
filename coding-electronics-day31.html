@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一起做：编程与电子小制作</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+.container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:40px 0 24px}
+header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
+header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
+.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
+.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
+.card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
+.tags{margin:12px 0 16px}
+.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#e6f4ee;color:#3d8c6a}
+.sec{margin:14px 0}
+.sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
+.sec.age3 h3::before{background:#f0a030}
+.sec.age9 h3::before{background:#4aa37a}
+.sec.both h3::before{background:#e8743b}
+.sec.why h3::before{background:#9b8cd0}
+.sec p{font-size:0.95rem;color:#4a4031}
+.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
+.safety b{color:#d04a2a}
+.diagram{display:block;margin:14px auto;max-width:360px}
+ul{margin:4px 0 4px 20px}
+li{font-size:0.94rem;margin:3px 0}
+.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#3f5a4d}
+footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>一起做：编程与电子小制作</h1>
+  <div class="meta">2026-07-18 · Day 31</div>
+</header>
+
+<div class="intro">「编程」听着高冷，核心就一句话：<b>把一件事拆成一步一步，讲清楚，让机器照着做</b>。今天四件，从<b>不用电脑</b>玩起——一台「人肉机器人」、一张会亮的纸卡片、一个自制 Scratch 小游戏、一场用「程序」找宝藏。3 岁玩因果和指令，9 岁真正写「代码」。<b>安全只有一处要盯死：纸电路的纽扣电池——3 岁误吞会灼伤内脏，是真正的急症，务必看好。</b>其余低风险。</div>
+
+<!-- 活动 1 -->
+<div class="card">
+  <h2>1. 人肉机器人<span class="en">The Human Robot</span></h2>
+  <div class="tags"><span class="tag">⏱ 15–30 分钟</span><span class="tag g">材料：胶带贴地面路线 + 几张手画指令卡（前进/左转/右转）</span><span class="tag">✅ 低风险</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>不插电的编程游戏，一分钟就能开始。规则：<b>大人（或姐姐）当机器人，孩子当程序员</b>。机器人是个「笨」机器——只听三条指令：<b>前进一步、左转、右转</b>，你说啥它做啥，绝不「自动脑补」。给机器人定个任务：绕过椅子走到冰箱拿玩具。程序员要<b>提前排好一串指令</b>（前进、前进、右转、前进…），排完再让机器人一次性执行。走歪了？别急着改口——先看是哪一步排错了，这就叫「debug」。</p>
+    <div class="safety"><b>安全：</b>几乎没风险。贴地面路线用<b>不留痕胶带</b>；先把地上尖角、易碎品挪开，机器人「走错」时别撞到桌角。就这样。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>排完整指令串、发现哪步错了当「主程序员」归 9 岁；喊单个指令、当机器人或指挥当「小指令员」归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她玩「一个口令一个动作」：喊「走！」你走一步，喊「转！」你转个身，她笑得前仰后合。别要求她排一长串——她要的是<b>「我一说，它就动」的因果快感</b>。也可以让她当机器人，你说「前进」她迈一步，「停」她定住。这游戏偷偷教她两件事：指令一个一个来、机器只做你说的那一件。剩下的全是笑。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她当「主程序员」：<b>先在纸上把整串指令写完</b>（前进×3、右转、前进×2…），再让机器人跑，中途不许改口。跑错一起回头找「第几步排错了」。进阶：加一条「重复」指令——「前进 4 步」写成「前进×4」，这就是<b>循环</b>的雏形。问她：<b>机器人为什么不会自己绕开椅子？</b>（因为它只做你写下的指令，你没写「转」它就不转——机器没有常识，你想让它干嘛，必须一步不漏地讲清楚，这正是写程序最难的事。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当程序员、妹妹当机器人（轮流换）。姐姐要把指令说得<b>妹妹能听懂、能照做</b>——太快太绕，妹妹这台「机器」就卡壳；妹妹当机器人只管「听到啥做啥」，不自作主张。两人走通一条路线，一起欢呼。角色不抢：排指令归姐姐，执行归妹妹。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>编程的内核不是电脑，是<b>「把大事拆成有顺序的小步骤，讲到机器能照做」</b>——这叫算法思维。机器不会脑补，你得想得特别清楚。变式：地面贴成格子迷宫，机器人按指令从起点走到终点拿「宝藏」，排错就撞墙，改对才通关。</p></div>
+</div>
+
+<!-- 活动 2 -->
+<div class="card">
+  <h2>2. 会亮的纸电路卡片<span class="en">The Glowing Paper Circuit</span></h2>
+  <div class="tags"><span class="tag">⏱ 30–45 分钟</span><span class="tag g">材料：一个 LED 灯珠 · 一枚 CR2032 纽扣电池 · 铜箔胶带（或铝箔+透明胶）· 卡纸</span><span class="tag">⚠ 纽扣电池：误吞急症</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>做一张<b>按一下就亮</b>的贺卡——用最简单的电路点亮一颗小灯。原理一句话：<b>电池两极，用导电的路连到 LED 两条腿，灯就亮</b>。步骤：①卡纸上画好图案（一颗星、一只萤火虫），LED 放在要发光处。②用<b>铜箔胶带</b>从 LED 一条腿贴一条「路」到电池正极、另一条腿贴到负极（长腿接正极「+」，接反不亮就倒过来）。③留一小段断开当「开关」——手指按下接通，灯亮。<b>不涉及火/热，LED 这么小的电几乎不发热。唯一危险是那枚纽扣电池。</b></p>
+    <div class="safety"><b>⚠ 头等安全（务必读）：纽扣电池（CR2032）绝对不能进 3 岁的嘴。</b>它一旦被吞下，会在食道里放电<b>灼穿组织，是可致命的急症</b>——这不是吓唬。所以：<b>纽扣电池全程由大人拿、大人装、大人收</b>，做完立刻收进 3 岁够不到的抽屉。3 岁只玩贴纸、涂色，<b>不碰电池、不碰散落的小灯珠（也是误吞风险）</b>。LED 腿有点尖，同样收好。若怀疑孩子吞了电池，<b>立即就医、别催吐</b>。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>接线、判断正负极、调试「为什么不亮」当「电路工程师」归 9 岁（电池仍由大人监管）；画图案、贴装饰、按开关看灯亮当「美工 + 点灯人」归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她管「好看」和「点亮」这两件最开心的事：画星星、涂颜色、贴亮片。电路由大人接好后，让她<b>按下「开关」那一下——灯亮！</b>那瞬间的惊喜就是这张卡片的全部意义。反复让她按、松、按、松，她在亲手玩<b>「因果」</b>：我一按它就亮。全程电池和灯珠<b>由大人掌控</b>，她只碰纸和能按的地方。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她当「电路工程师」：亲手用铜箔胶带把 LED 两条腿连到电池两极，<b>自己判断长腿接正极</b>。灯不亮时一起排查：接反了？铜箔没贴实断路了？还是电池没电？这就是电路版的 debug。挑战她做个<b>真正的「开关」</b>——卡纸折一下，按下才导通。问她：<b>电为什么能让灯亮，还必须绕一整圈？</b>（因为电要从电池一极出发、穿过灯、再回到另一极，形成完整「回路」——断哪都不亮。灯亮就是电流跑通一整圈的信号。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>妹妹先画好图案、定好「灯装在哪」，姐姐按她的设计把电路接到那儿。姐姐负责「让它亮」，妹妹负责「好看 + 按开关」，做成一张会亮的贺卡送妈妈或奶奶。角色不抢：接电路归姐姐，画图案按开关归妹妹。大人始终盯着电池。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>点亮一颗灯需要一条<b>不断开的回路</b>：电从电池一极出发，经过灯，再回到另一极。孩子由此摸到「电路」最朴素的样子——不神秘，就是一条让电跑一圈的路。变式：串两颗不同颜色的 LED，或把「开关」做成翻页机关，翻开卡片灯才亮，做一张「魔法贺卡」。</p></div>
+</div>
+
+<!-- 活动 3 -->
+<div class="card">
+  <h2>3. 你的第一个 Scratch 小游戏<span class="en">Your First Scratch Game</span></h2>
+  <div class="tags"><span class="tag">⏱ 40–60 分钟</span><span class="tag g">材料：一台电脑或平板 · Scratch（网页版免费，scratch.mit.edu）</span><span class="tag">✅ 低风险 · 注意屏幕时间</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>Scratch 是麻省理工做的儿童编程工具，<b>不用打字，把积木块拖到一起就是程序</b>。今天目标不大：做一个能玩的<b>「小猫抓东西」小游戏</b>——按方向键让小猫走、碰到苹果就加分。打开 scratch.mit.edu，选个角色，把「当按下→键、移动 10 步」这样的积木拖到一起，再加「如果碰到苹果，分数+1」。跑起来能玩就成了。别求完美，<b>先让它动起来</b>，再一点点加花样。</p>
+    <div class="safety"><b>安全：</b>本身无风险，主要是<b>屏幕时间</b>——设个 45–60 分钟的闹钟，到点停。3 岁看屏幕别太近、别太久（十几分钟足矣）。用网页版不用装软件；若给孩子注册账号，用大人的邮箱。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>拖积木、搭逻辑、调试当「游戏开发者」归 9 岁；选角色、配音、当「首席测试玩家」归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她还拖不动逻辑积木，但能做三件超重要的事：<b>选角色</b>（小猫还是恐龙？）、<b>录声音</b>（对着麦克风喊「喵！」当音效，她会笑疯）、当<b>首席测试玩家</b>——姐姐做好一点就让妹妹上手按键玩。她按方向键看小猫动，又是一次「我一按它就动」的因果快乐。十几分钟就够，别盯屏幕太久。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她当「游戏开发者」真正写逻辑：用<b>「当按下方向键 → 移动」</b>让角色动，用<b>「如果碰到 → 分数+1、播放声音」</b>做规则。挑战她加一个<b>循环</b>（「重复执行」让苹果不停冒）和一个<b>条件</b>（分数到 10 显示「你赢了」）。跑错自己调。问她：<b>电脑怎么知道小猫「碰到」了苹果？</b>（因为你写了「如果……就……」的判断，电脑每一瞬间都在检查它成没成立——程序就是无数个这样的「如果」和「重复」搭起来的。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当开发者搭程序，妹妹当美术兼测试：选角色、录音效、画背景（Scratch 里能涂），姐姐把这些装进游戏。每做好一步就让妹妹试玩、提意见（「苹果太快啦」），姐姐再回去调——最真实的「产品经理 + 程序员」协作。做好了全家一起玩这个自家出品的游戏。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>Scratch 把编程的两大骨架变成看得见的积木：<b>「重复」（循环）</b>让电脑不厌其烦地干一件事，<b>「如果…就…」（条件）</b>让它学会看情况做反应。孩子拖着玩，就摸到了所有程序的底层逻辑。变式：把「人肉机器人」的迷宫搬进 Scratch，让小猫按写好的指令走迷宫——线下线上打通了。</p></div>
+</div>
+
+<!-- 活动 4 -->
+<div class="card">
+  <h2>4. 指令寻宝：把地图变成程序<span class="en">Command Quest: Program a Treasure Hunt</span></h2>
+  <div class="tags"><span class="tag">⏱ 30–40 分钟</span><span class="tag g">材料：纸笔 · 一个小「宝藏」（零食/贴纸）· 客厅或院子</span><span class="tag">✅ 低风险</span></div>
+  <div class="sec">
+    <h3>准备与安全</h3>
+    <p>把「编程」变成全家都能玩的寻宝游戏。<b>藏宝的人先把「怎么走到宝藏」写成一串纯指令</b>——不能写「去厨房」，只能写机器听得懂的：「前进 5 步、左转、前进 3 步、蹲下、掀开垫子」。找宝的人当机器人，<b>严格照指令执行，不许自己猜</b>。写清楚就能找到，写漏一步就走偏——那刻大家就懂了「程序里差一步，结果全歪」。换人再藏。</p>
+    <div class="safety"><b>安全：</b>低风险。指令别把「机器人」引向<b>楼梯口、阳台、热厨房</b>这些地方；院子里玩注意别撞到花盆。宝藏是零食的话，先确认<b>没有过敏</b>成分再给 3 岁。</div>
+    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>写指令串、藏宝、发现「哪步写漏了」当「程序作者」归 9 岁；当找宝的机器人、数步数当「执行官」归 3 岁。</div>
+  </div>
+  <div class="sec age3"><h3>3 岁版</h3><p>她当「找宝机器人」最合适：大人念一条指令（「向前走三步」），她照着走、数「一、二、三」，再念下一条。走到宝藏那刻的惊喜就是全部奖赏，她在不知不觉中练<b>数数、听指令、按顺序做</b>。也可以让她「藏」——把零食往沙发底下一塞，再比划「往那边」，虽不成「程序」，但已在体会「我得告诉你怎么走」了。</p></div>
+  <div class="sec age9"><h3>9 岁版</h3><p>她当「程序作者」：藏好宝，<b>把路线写成一串精确指令</b>交给「机器人」执行。挑战在于站在执行者角度想「这样写他会不会走错」。走偏了一起回看是<b>哪条指令含糊或写漏了</b>（debug）。进阶：用「重复 N 次」压缩（「前进 ×6」），这就是循环。问她：<b>为什么不能直接写「去沙发那儿」？</b>（因为机器人没有你脑里的地图，只懂「走几步、往哪转」——你得把一目了然的路翻译成精确指令，这就是编程在做的事。）</p></div>
+  <div class="sec both"><h3>姐妹一起</h3><p>姐姐当程序作者写指令，妹妹当机器人执行；找到宝藏后换过来，让妹妹「口述」路线、姐姐帮她写成指令卡。姐姐会发现：想让妹妹这台「机器」不走错，指令得又简单又准；妹妹会发现照着做就能找到宝藏，特别有成就感。角色不抢：写指令归姐姐，执行归妹妹。</p></div>
+  <div class="sec why"><h3>背后的为什么 + 变式</h3><p>这个游戏把编程最核心的一课玩明白了：<b>人脑靠「意会」，机器只认「精确的一步步指令」</b>。写程序，本质就是把你心里那条「一看就懂」的路，拆成机器能照做的小步骤——漏一步就走偏。变式：加「如果……就……」的条件指令（「碰到红垫子就右转」），寻宝路线立刻升级成有分支的真程序。</p></div>
+</div>
+
+<div class="pick">
+  <h2>本周就选一个</h2>
+  <p>时间紧又想立刻开玩，就选 <b>「人肉机器人」</b>——零材料、零准备，站起来就能玩，3 岁笑到打滚、9 岁真在练算法思维，还不碰屏幕和电池，最省心。等哪个晚上有整块时间、大人能全程盯着电池，再做「会亮的纸电路卡片」，那颗灯亮起来的瞬间值得郑重对待。</p>
+</div>
+
+<footer>过程比结果重要，陪伴比教育重要。</footer>
+</div>
+</body>
+</html>
