@@ -5,36 +5,40 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>一起做：家里的物理</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:340px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -56,13 +60,13 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>斜坡别搭太高太陡，板子垫稳别滑落砸脚；玻璃珠、小钢珠这类<b>小而硬的东西 3 岁不要用</b>（误吞，且滚得快易伤眼），改用大皮球、玩具车。沉重物体别从陡坡放，砸到脚很疼。地上的滚动物及时捡走，免得踩上摔倒。</div>
 </div>
 <svg aria-label="斜坡滚动示意：板子一头垫高，球从顶端滚下" class="diagram" viewbox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a7a66" stroke-width="2" x1="20" x2="280" y1="100" y2="100"></line>
-<rect fill="#fdf0e6" height="30" stroke="#e8743b" stroke-width="1.5" width="40" x="30" y="70"></rect>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="50" y="90">书</text>
-<line stroke="#e8743b" stroke-width="3" x1="35" x2="250" y1="70" y2="100"></line>
-<circle cx="70" cy="78" fill="#e6f4ee" r="11" stroke="#3d8c6a" stroke-width="2"></circle>
-<path d="M70 78 L95 90" stroke="#9b8cd0" stroke-dasharray="3 3" stroke-width="1.5"></path>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="150" y="118">坡越陡，滚得越快</text>
+<line stroke="#9c8c78" stroke-width="2" x1="20" x2="280" y1="100" y2="100"></line>
+<rect fill="#281b11" height="30" stroke="#cc581f" stroke-width="1.5" width="40" x="30" y="70"></rect>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="50" y="90">书</text>
+<line stroke="#cc581f" stroke-width="3" x1="35" x2="250" y1="70" y2="100"></line>
+<circle cx="70" cy="78" fill="#1a2822" r="11" stroke="#72c19f" stroke-width="2"></circle>
+<path d="M70 78 L95 90" stroke="#4a3b7f" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="150" y="118">坡越陡，滚得越快</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「放手开滚」——把球放在坡顶，听口令「预备—放！」松手，看它咕噜噜冲下去。这一下「松手就动」的因果对她超有吸引力，能反复玩几十次不腻。让她挑「今天用哪个球」，再追着滚下去的球跑去捡回来——捡球本身就是大运动量的好玩法。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「做对照实验」——一次只改一个条件：先固定坡度，比不同的东西；再固定同一个球，比不同坡度。挑战她预测并解释：为什么圆的滚得动、方的滚不动？为什么坡越陡越快？（更陡时，重力「往下拉」的分量更多用在让它前进上）她可以拿尺量「到底用了几秒」，记下来比较。</p></div>
@@ -93,15 +97,15 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>最大风险是<b>误吞</b>——小而强的磁铁（尤其亮晶晶的钕磁铁/巴克球）一旦吞下两颗以上，会隔着肠壁互相吸住，非常危险要急诊。<b>3 岁只用大块、吞不下的冰箱贴磁铁，强力小磁铁收好别让她碰</b>。磁铁别靠近手机、银行卡、老式电视；强磁铁互吸会「啪」地夹到手指。</div>
 </div>
 <svg aria-label="隔空操控示意：磁铁在纸下移动，纸上回形针跟着走" class="diagram" viewbox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a7a66" stroke-width="2" x1="30" x2="270" y1="55" y2="55"></line>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="150" y="48">一张纸</text>
-<rect fill="#9b8cd0" height="16" rx="2" width="34" x="120" y="58"></rect>
-<text fill="#fff" font-size="8" text-anchor="middle" x="137" y="70">磁铁</text>
-<circle cx="137" cy="44" fill="none" r="5" stroke="#e8743b" stroke-width="2.5"></circle>
-<path d="M137 58 L137 50" stroke="#9b8cd0" stroke-dasharray="2 2" stroke-width="1.5"></path>
-<path d="M170 58 L210 58" marker-end="url(#a)" stroke="#3d8c6a" stroke-dasharray="4 3" stroke-width="1.5"></path>
-<defs><marker id="a" markerheight="6" markerwidth="6" orient="auto" refx="5" refy="3"><path d="M0 0 L6 3 L0 6 Z" fill="#3d8c6a"></path></marker></defs>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="150" y="100">磁铁在下面走，回形针在上面跟着跑</text>
+<line stroke="#9c8c78" stroke-width="2" x1="30" x2="270" y1="55" y2="55"></line>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="150" y="48">一张纸</text>
+<rect fill="#4a3b7f" height="16" rx="2" width="34" x="120" y="58"></rect>
+<text fill="#ffffff" font-size="8" text-anchor="middle" x="137" y="70">磁铁</text>
+<circle cx="137" cy="44" fill="none" r="5" stroke="#cc581f" stroke-width="2.5"></circle>
+<path d="M137 58 L137 50" stroke="#4a3b7f" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<path d="M170 58 L210 58" marker-end="url(#a)" stroke="#72c19f" stroke-dasharray="4 3" stroke-width="1.5"></path>
+<defs><marker id="a" markerheight="6" markerwidth="6" orient="auto" refx="5" refy="3"><path d="M0 0 L6 3 L0 6 Z" fill="#72c19f"></path></marker></defs>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="150" y="100">磁铁在下面走，回形针在上面跟着跑</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「拿着磁铁去吸」——举着大冰箱贴在家里到处碰，碰到铁的会「啪」地黏住，碰到别的没反应，那股「自己吸住了」的神奇感她百试不厌。你陪她一起喊「吸住啦！」「这个不行～」。最爱的玩法：把回形针撒在桌上，让她用磁铁一下「收」起一大串，像钓鱼一样拎起来。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「探究边界」——列个清单：家里哪些东西被吸、哪些不被吸，再找规律（被吸的几乎都是铁做的，铝、铜、某些不锈钢不吸）。挑战：磁力能<b>隔着</b>什么起作用？隔着纸、水杯、手、几本书还行不行？她会发现磁力能穿过非铁的东西，但隔得越厚越弱。进阶：用磁铁在纸下走迷宫，让纸上的回形针走出去。</p></div>
@@ -118,14 +122,14 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>钝尺子和笔本身安全；但杠杆撬动时<b>翘起的一头会突然弹起</b>，别让脸凑太近，重物别用又重又硬的（砸下或弹飞会伤人），用硬币、小积木就好。3 岁玩时支点和重物都换成轻软的。家里真正的工具（真剪刀、起子）让孩子认一认，使用归大人。</div>
 </div>
 <svg aria-label="杠杆示意：尺子架在笔上当跷跷板，一头压下翘起另一头重物" class="diagram" viewbox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a7a66" stroke-width="2" x1="20" x2="280" y1="95" y2="95"></line>
-<polygon fill="#9b8cd0" points="150,95 140,78 160,78"></polygon>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="150" y="108">支点</text>
-<line stroke="#e8743b" stroke-width="3" x1="55" x2="245" y1="60" y2="92"></line>
-<rect fill="#e6f4ee" height="14" stroke="#3d8c6a" stroke-width="1.5" width="22" x="48" y="48"></rect>
-<text fill="#3d8c6a" font-size="9" text-anchor="middle" x="59" y="42">重物</text>
-<path d="M238 90 L238 78" marker-end="url(#d)" stroke="#d96a2e" stroke-width="2"></path>
-<defs><marker id="d" markerheight="7" markerwidth="7" orient="auto" refx="3" refy="6"><path d="M0 0 L6 0 L3 6 Z" fill="#d96a2e"></path></marker></defs>
+<line stroke="#9c8c78" stroke-width="2" x1="20" x2="280" y1="95" y2="95"></line>
+<polygon fill="#4a3b7f" points="150,95 140,78 160,78"></polygon>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="150" y="108">支点</text>
+<line stroke="#cc581f" stroke-width="3" x1="55" x2="245" y1="60" y2="92"></line>
+<rect fill="#142e15" height="14" stroke="#72c19f" stroke-width="1.5" width="22" x="48" y="48"></rect>
+<text fill="#72c19f" font-size="9" text-anchor="middle" x="59" y="42">重物</text>
+<path d="M238 90 L238 78" marker-end="url(#d)" stroke="#d6672b" stroke-width="2"></path>
+<defs><marker id="d" markerheight="7" markerwidth="7" orient="auto" refx="3" refy="6"><path d="M0 0 L6 0 L3 6 Z" fill="#d6672b"></path></marker></defs>
 <text fill="#d96a2e" font-size="9" text-anchor="middle" x="238" y="74">按</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「按下去、看它飞」——尺子一头放个小玩具，她使劲一拍另一头，玩具「嗖」地蹦起来，这股「我一按它就飞」的成就感让她笑个不停。当成发射小玩具的弹射器玩就好，不用懂原理。也让她玩斜面：把小车推上斜坡再放手滑下来，体会「推上去费劲、滑下来轻松」。</p></div>

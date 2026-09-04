@@ -5,36 +5,40 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>一起做：音乐与节奏</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:340px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -56,17 +60,17 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>沙锤的盖子一定<b>拧到最紧</b>，必要时用胶带缠一圈封死——里面的米和小石子是 3 岁的误食和呛噎风险，绝不能让她单独打开。<b>3 岁不玩小石子款</b>，只给装米/豆的，且看着别打开。水杯音阶用玻璃杯时摆在桌子中间、别放桌沿，敲的力道要轻（用力会敲碎），这一节 3 岁敲杯子需全程有人扶着杯子。皮筋绷在盒上别绷太多太紧，弹手疼，套皮筋这步由大人或 9 岁做。</div>
 </div>
 <svg aria-label="三种自制乐器示意" class="diagram" viewbox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#fdf0e6" height="55" rx="6" stroke="#e8743b" stroke-width="2" width="26" x="20" y="30"></rect>
-<circle cx="28" cy="60" fill="#8a7a66" r="2"></circle><circle cx="36" cy="68" fill="#8a7a66" r="2"></circle><circle cx="32" cy="50" fill="#8a7a66" r="2"></circle>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="33" y="97">沙锤</text>
-<rect fill="#fdf0e6" height="48" rx="4" stroke="#e8743b" stroke-width="2" width="70" x="120" y="35"></rect>
-<ellipse cx="155" cy="59" fill="#fffaf0" rx="16" ry="11" stroke="#b0a08c"></ellipse>
-<line stroke="#4aa37a" x1="120" x2="190" y1="50" y2="50"></line><line stroke="#4aa37a" x1="120" x2="190" y1="59" y2="59"></line><line stroke="#4aa37a" x1="120" x2="190" y1="68" y2="68"></line>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="155" y="97">皮筋吉他</text>
-<rect fill="#e6f4ee" height="30" stroke="#3d8c6a" width="14" x="240" y="55"></rect>
-<rect fill="#e6f4ee" height="40" stroke="#3d8c6a" width="14" x="262" y="45"></rect>
-<rect fill="#e6f4ee" height="50" stroke="#3d8c6a" width="14" x="284" y="35"></rect>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="270" y="97">水杯音阶</text>
+<rect fill="#281b11" height="55" rx="6" stroke="#cc581f" stroke-width="2" width="26" x="20" y="30"></rect>
+<circle cx="28" cy="60" fill="#9c8c78" r="2"></circle><circle cx="36" cy="68" fill="#9c8c78" r="2"></circle><circle cx="32" cy="50" fill="#9c8c78" r="2"></circle>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="33" y="97">沙锤</text>
+<rect fill="#281b11" height="48" rx="4" stroke="#cc581f" stroke-width="2" width="70" x="120" y="35"></rect>
+<ellipse cx="155" cy="59" fill="#1d180e" rx="16" ry="11" stroke="#7d6d59"></ellipse>
+<line stroke="#5fb88f" x1="120" x2="190" y1="50" y2="50"></line><line stroke="#5fb88f" x1="120" x2="190" y1="59" y2="59"></line><line stroke="#5fb88f" x1="120" x2="190" y1="68" y2="68"></line>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="155" y="97">皮筋吉他</text>
+<rect fill="#142e15" height="30" stroke="#72c19f" width="14" x="240" y="55"></rect>
+<rect fill="#142e15" height="40" stroke="#72c19f" width="14" x="262" y="45"></rect>
+<rect fill="#142e15" height="50" stroke="#72c19f" width="14" x="284" y="35"></rect>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="270" y="97">水杯音阶</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「摇和敲」——做好的沙锤交给她使劲摇，跟着大人哼的调子摇快摇慢，这是她最得意的动作。水杯音阶让她拿勺子轻轻敲（你扶住杯子），听不同杯子「叮、咚」声音不一样，她会一个个挨着敲过去乐此不疲。皮筋盒让她随便拨，感受指尖那股「嗡」的颤动。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「调音」——给水杯音阶一杯杯加水、试敲、再微调，目标是凑出能敲《小星星》前几个音的一组音高。挑战回答：为什么水越多声音越低？（水多了杯子和水一起振动得慢，慢就是低音）皮筋吉他也让她试：哪根皮筋音高？绷得越紧、越细的越高。她还能往妹妹的沙锤里换材料，比比哪个最好听。</p></div>

@@ -4,36 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Make Together: Physics at Home</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:340px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -57,13 +61,13 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <div class="safety"><b>Safety:</b> Don't build the ramp too tall or steep, and prop the board firmly so it can't slip and land on a foot. Small hard things like glass marbles or steel balls are <b>not for the 3-year-old</b> (choking risk, and they roll fast enough to hurt an eye)—use a big ball or toy car instead. Don't roll heavy objects down a steep ramp; they hurt when they hit a foot. Pick up rolling objects from the floor promptly so no one slips on them.</p></div>
   </div>
   <svg class="diagram" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" aria-label="Ramp diagram: board propped at one end, ball rolling down from the top">
-    <line x1="20" y1="100" x2="280" y2="100" stroke="#8a7a66" stroke-width="2"/>
-    <rect x="30" y="70" width="40" height="30" fill="#fdf0e6" stroke="#e8743b" stroke-width="1.5"/>
-    <text x="50" y="90" font-size="9" fill="#8a7a66" text-anchor="middle">books</text>
-    <line x1="35" y1="70" x2="250" y2="100" stroke="#e8743b" stroke-width="3"/>
-    <circle cx="70" cy="78" r="11" fill="#e6f4ee" stroke="#3d8c6a" stroke-width="2"/>
-    <path d="M70 78 L95 90" stroke="#9b8cd0" stroke-width="1.5" stroke-dasharray="3 3"/>
-    <text x="150" y="118" font-size="10" fill="#8a7a66" text-anchor="middle">Steeper ramp, faster roll</text>
+    <line x1="20" y1="100" x2="280" y2="100" stroke="#9c8c78" stroke-width="2"/>
+    <rect x="30" y="70" width="40" height="30" fill="#281b11" stroke="#cc581f" stroke-width="1.5"/>
+    <text x="50" y="90" font-size="9" fill="#9c8c78" text-anchor="middle">books</text>
+    <line x1="35" y1="70" x2="250" y2="100" stroke="#cc581f" stroke-width="3"/>
+    <circle cx="70" cy="78" r="11" fill="#1a2822" stroke="#72c19f" stroke-width="2"/>
+    <path d="M70 78 L95 90" stroke="#4a3b7f" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="150" y="118" font-size="10" fill="#9c8c78" text-anchor="middle">Steeper ramp, faster roll</text>
   </svg>
   <div class="sec age3"><h3>Age 3</h3><p>She's in charge of "let go and roll"—set the ball at the top, wait for "ready... go!", let go, and watch it tumble down. That "let go and it moves" cause-and-effect is irresistible to her; she'll do it dozens of times without getting bored. Let her pick "which ball today," then chase the runaway ball and bring it back—fetching the ball is a great big-muscle game all on its own.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She runs a "controlled experiment"—change just one thing at a time: first fix the slope and compare different objects; then keep the same ball and compare different slopes. Have her predict and explain: why do round things roll but square things don't? Why does a steeper ramp mean faster? (When it's steeper, more of gravity's downward pull goes into driving it forward.) She can use a ruler and "how many seconds" to time each run and compare.</p></div>
@@ -96,15 +100,15 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <div class="safety"><b>Safety:</b> The biggest risk is <b>swallowing</b>—small strong magnets (especially shiny neodymium magnets / Buckyballs) are very dangerous if two or more are swallowed, because they clamp onto each other through the walls of the gut, an ER situation. <b>The 3-year-old uses only big, can't-be-swallowed fridge magnets; keep strong little magnets put away and out of her reach.</b> Keep magnets away from phones, bank cards, and old-style TVs. Watch for pinched fingers—strong magnets snap together and can catch a finger.</p></div>
   </div>
   <svg class="diagram" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg" aria-label="Action-through-air diagram: magnet moves under the paper, the clip on top follows">
-    <line x1="30" y1="55" x2="270" y2="55" stroke="#8a7a66" stroke-width="2"/>
-    <text x="150" y="48" font-size="9" fill="#8a7a66" text-anchor="middle">sheet of paper</text>
-    <rect x="120" y="58" width="34" height="16" rx="2" fill="#9b8cd0"/>
-    <text x="137" y="70" font-size="8" fill="#fff" text-anchor="middle">magnet</text>
-    <circle cx="137" cy="44" r="5" fill="none" stroke="#e8743b" stroke-width="2.5"/>
-    <path d="M137 58 L137 50" stroke="#9b8cd0" stroke-width="1.5" stroke-dasharray="2 2"/>
-    <path d="M170 58 L210 58" stroke="#3d8c6a" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#a)"/>
-    <defs><marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#3d8c6a"/></marker></defs>
-    <text x="150" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">Magnet moves below, clip follows above</text>
+    <line x1="30" y1="55" x2="270" y2="55" stroke="#9c8c78" stroke-width="2"/>
+    <text x="150" y="48" font-size="9" fill="#9c8c78" text-anchor="middle">sheet of paper</text>
+    <rect x="120" y="58" width="34" height="16" rx="2" fill="#4a3b7f"/>
+    <text x="137" y="70" font-size="8" fill="#ffffff" text-anchor="middle">magnet</text>
+    <circle cx="137" cy="44" r="5" fill="none" stroke="#cc581f" stroke-width="2.5"/>
+    <path d="M137 58 L137 50" stroke="#4a3b7f" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M170 58 L210 58" stroke="#72c19f" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#a)"/>
+    <defs><marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#72c19f"/></marker></defs>
+    <text x="150" y="100" font-size="10" fill="#9c8c78" text-anchor="middle">Magnet moves below, clip follows above</text>
   </svg>
   <div class="sec age3"><h3>Age 3</h3><p>She's in charge of "carry the magnet and make it grab"—hold up a big fridge magnet and touch it all around the house; it "clicks" onto iron things and does nothing to the rest, and that "it grabbed by itself" magic never gets old. Cheer along with her: "It stuck! ... Not this one~" Her favorite: scatter paper clips on the table and let her "scoop up" a whole dangling string with the magnet, lifting it like a fishing line.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She "explores the limits"—make a list of what the magnet grabs and what it doesn't, then find the pattern (almost everything it grabs is made of iron; aluminum, copper, and some stainless steels don't stick). Challenge: what can magnetism work <b>through</b>? Through paper, through the water cup, through a hand, through a few books? She'll find magnetism passes through non-iron things but gets weaker the thicker they are. Level up: run a maze with the magnet under the paper, guiding the clip on top to the exit.</p></div>
@@ -122,14 +126,14 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <div class="safety"><b>Safety:</b> A blunt ruler and pen are safe in themselves, but when the lever pries, <b>the lifted end flings up suddenly</b>—keep faces back, and don't use heavy hard weights (something that drops or flies off can hurt), just coins or small blocks. For the 3-year-old, swap in light, soft items for both fulcrum and weight so the ruler can't snap up at her. Let kids identify real tools (real scissors, an opener), but using them stays with the adult.</p></div>
   </div>
   <svg class="diagram" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg" aria-label="Lever diagram: ruler on a pen as a seesaw, press one end to lift the weight on the other">
-    <line x1="20" y1="95" x2="280" y2="95" stroke="#8a7a66" stroke-width="2"/>
-    <polygon points="150,95 140,78 160,78" fill="#9b8cd0"/>
-    <text x="150" y="108" font-size="9" fill="#8a7a66" text-anchor="middle">fulcrum</text>
-    <line x1="55" y1="60" x2="245" y2="92" stroke="#e8743b" stroke-width="3"/>
-    <rect x="48" y="48" width="22" height="14" fill="#e6f4ee" stroke="#3d8c6a" stroke-width="1.5"/>
-    <text x="59" y="42" font-size="9" fill="#3d8c6a" text-anchor="middle">weight</text>
-    <path d="M238 90 L238 78" stroke="#d96a2e" stroke-width="2" marker-end="url(#d)"/>
-    <defs><marker id="d" markerWidth="7" markerHeight="7" refX="3" refY="6" orient="auto"><path d="M0 0 L6 0 L3 6 Z" fill="#d96a2e"/></marker></defs>
+    <line x1="20" y1="95" x2="280" y2="95" stroke="#9c8c78" stroke-width="2"/>
+    <polygon points="150,95 140,78 160,78" fill="#4a3b7f"/>
+    <text x="150" y="108" font-size="9" fill="#9c8c78" text-anchor="middle">fulcrum</text>
+    <line x1="55" y1="60" x2="245" y2="92" stroke="#cc581f" stroke-width="3"/>
+    <rect x="48" y="48" width="22" height="14" fill="#142e15" stroke="#72c19f" stroke-width="1.5"/>
+    <text x="59" y="42" font-size="9" fill="#72c19f" text-anchor="middle">weight</text>
+    <path d="M238 90 L238 78" stroke="#d6672b" stroke-width="2" marker-end="url(#d)"/>
+    <defs><marker id="d" markerWidth="7" markerHeight="7" refX="3" refY="6" orient="auto"><path d="M0 0 L6 0 L3 6 Z" fill="#d6672b"/></marker></defs>
     <text x="238" y="74" font-size="9" fill="#d96a2e" text-anchor="middle">press</text>
   </svg>
   <div class="sec age3"><h3>Age 3</h3><p>She's in charge of "press down and watch it fly"—put a small toy on one end of the ruler, let her smack the other end, and the toy "boings" into the air. That "I press and it flies" thrill keeps her giggling. Just treat it as a toy-launching catapult; no need to understand the why. Let her play with the ramp too: push a toy car up the slope and let go to slide down, feeling "hard to push up, easy to slide down."</p></div>

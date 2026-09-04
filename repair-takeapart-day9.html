@@ -5,36 +5,40 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>一起做：修理与拆解</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:360px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -56,18 +60,18 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>只拆<b>电池供电</b>的小玩具。<b>绝对不拆插墙的电器、不拆微波炉/电视/相机/旧电源</b>——里面有大电容，断电后仍可能存危险电量，没有例外。螺丝刀尖朝下放、别对人。拆出的<b>小零件、纽扣电池对 3 岁是误食大忌</b>，纽扣电池吞下会灼伤食道，全程看管、拆完立刻收走。金属断口会割手，别摸断面。漏液电池用纸巾包着拿。</div>
 </div>
 <svg aria-label="拆玩具三步示意" class="diagram" viewbox="0 0 360 110" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#fdf0e6" height="55" rx="6" stroke="#e8743b" stroke-width="2" width="70" x="14" y="25"></rect>
-<circle cx="30" cy="38" fill="#8a7a66" r="3"></circle><circle cx="68" cy="38" fill="#8a7a66" r="3"></circle>
-<circle cx="30" cy="68" fill="#8a7a66" r="3"></circle><circle cx="68" cy="68" fill="#8a7a66" r="3"></circle>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="49" y="100">①找四角的螺丝</text>
-<path d="M150 30 l18 0 0 -10 8 0 0 26 -8 0 0 -10 -18 0 z" fill="#4aa37a"></path>
-<line stroke="#8a7a66" stroke-width="2" x1="176" x2="200" y1="48" y2="48"></line>
-<circle cx="158" cy="70" fill="#e8743b" r="4"></circle><circle cx="170" cy="70" fill="#e8743b" r="4"></circle>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="170" y="100">②拧开收好螺丝</text>
-<circle cx="285" cy="42" fill="#fff" r="14" stroke="#4aa37a" stroke-width="2"></circle>
-<circle cx="285" cy="42" fill="#4aa37a" r="4"></circle>
-<rect fill="#e6f4ee" height="22" rx="3" stroke="#3d8c6a" width="44" x="265" y="62"></rect>
-<text fill="#8a7a66" font-size="10" text-anchor="middle" x="287" y="100">③看里面：马达·电路板</text>
+<rect fill="#281b11" height="55" rx="6" stroke="#cc581f" stroke-width="2" width="70" x="14" y="25"></rect>
+<circle cx="30" cy="38" fill="#9c8c78" r="3"></circle><circle cx="68" cy="38" fill="#9c8c78" r="3"></circle>
+<circle cx="30" cy="68" fill="#9c8c78" r="3"></circle><circle cx="68" cy="68" fill="#9c8c78" r="3"></circle>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="49" y="100">①找四角的螺丝</text>
+<path d="M150 30 l18 0 0 -10 8 0 0 26 -8 0 0 -10 -18 0 z" fill="#5fb88f"></path>
+<line stroke="#9c8c78" stroke-width="2" x1="176" x2="200" y1="48" y2="48"></line>
+<circle cx="158" cy="70" fill="#cc581f" r="4"></circle><circle cx="170" cy="70" fill="#cc581f" r="4"></circle>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="170" y="100">②拧开收好螺丝</text>
+<circle cx="285" cy="42" fill="#0a0a0a" r="14" stroke="#5fb88f" stroke-width="2"></circle>
+<circle cx="285" cy="42" fill="#5fb88f" r="4"></circle>
+<rect fill="#142e15" height="22" rx="3" stroke="#72c19f" width="44" x="265" y="62"></rect>
+<text fill="#9c8c78" font-size="10" text-anchor="middle" x="287" y="100">③看里面：马达·电路板</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「拧出来 + 分类」——你先把每颗螺丝拧松半圈，剩下的让她用螺丝刀（或手指）拧到掉出来，那个「越转越松、啪嗒掉下」的过程她能乐很久。拧下的螺丝、齿轮，让她按大小或颜色分进小盒不同格当「零件管理员」。她还能转齿轮、按按钮听声音。小零件不许进嘴，全程盯着。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「主拆 + 画拆解图」——自己选螺丝刀、按顺序拧、记住哪颗螺丝在哪（在纸上画个图、每拧一颗标一下，这是修理工的真本事）。挑战：找到马达，看它接的两根线、装上电池为什么会转？大小齿轮咬在一起是干嘛的（变速/变力）？拆完试着倒装回一部分，体会「拆容易、装回难」。</p></div>

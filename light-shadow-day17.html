@@ -5,36 +5,40 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>一起做：光影游戏</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:340px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -54,17 +58,17 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <h3>准备与安全</h3>
 <p>材料：一只手电筒（手机手电也行）；一面白墙，或挂一张白床单/大白纸当幕布；几个纸板剪的小人、小动物（旧快递箱剪的就好），用筷子或竹签粘在背后当手柄。玩法：关灯，手电固定照向墙，把纸偶放在光和墙<b>中间</b>，墙上立刻出现黑影子。让孩子来回移动纸偶——<b>离墙越近，影子越小越清楚；离手电越近，影子越大越糊</b>，一只小纸兔能变成墙上一头巨兽。摆好几个角色，就能演一段小故事。</p>
 <div class="safety"><b>安全：</b>黑暗里容易绊倒，先收走地上杂物，留一盏小夜灯或留条门缝透光。<b>手电别直射眼睛</b>，尤其手机闪光灯很刺眼。剪纸偶用安全剪刀，竹签尖头用胶布包一圈；<b>3 岁不碰尖签</b>，给她钝头的或直接用手拿纸偶。</div>
-<div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>剪纸、削竹签由大人或 9 岁完成，3 岁只负责举着玩。</div>
+<div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">分工：</b>剪纸、削竹签由大人或 9 岁完成，3 岁只负责举着玩。</div>
 </div>
 <svg aria-label="影子剧场示意：手电照墙，纸偶在中间，墙上投出放大的影子" class="diagram" viewbox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-<circle cx="40" cy="60" fill="#f0a030" r="10"></circle>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="40" y="92">手电</text>
-<path d="M50 60 L120 35 M50 60 L120 85" stroke="#f0a030" stroke-dasharray="3 3" stroke-width="1"></path>
-<rect fill="#9b8cd0" height="24" rx="2" width="14" x="120" y="48"></rect>
-<text fill="#8a7a66" font-size="8" text-anchor="middle" x="127" y="92">纸偶</text>
-<line stroke="#8a7a66" stroke-width="2" x1="260" x2="260" y1="15" y2="105"></line>
-<rect fill="#3d3328" height="44" opacity="0.5" rx="2" width="22" x="244" y="38"></rect>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="255" y="100">墙上的大影子</text>
+<circle cx="40" cy="60" fill="#d68616" r="10"></circle>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="40" y="92">手电</text>
+<path d="M50 60 L120 35 M50 60 L120 85" stroke="#d68616" stroke-dasharray="3 3" stroke-width="1"></path>
+<rect fill="#4a3b7f" height="24" rx="2" width="14" x="120" y="48"></rect>
+<text fill="#9c8c78" font-size="8" text-anchor="middle" x="127" y="92">纸偶</text>
+<line stroke="#9c8c78" stroke-width="2" x1="260" x2="260" y1="15" y2="105"></line>
+<rect fill="#263f27" height="44" opacity="0.5" rx="2" width="22" x="244" y="38"></rect>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="255" y="100">墙上的大影子</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「举着纸偶在墙前晃」——看着自己手里的小纸人在墙上忽大忽小，她会乐此不疲地走近走远。最爱的玩法：让她追自己的影子、对着墙挥手看影子也挥手，那种「墙上有个我」的发现对她就是魔法。你帮她说：「走近啦，影子变小！退远点，变成大怪兽！」</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「当编剧 + 导演」——剪两三个角色，编一段三句话能讲完的小故事（小兔遇到大灰狼之类），靠控制远近让角色「走过来」「变大吓人」。挑战她解释：为什么离手电越近影子越大？（光是从一个点散开的，挡得越靠近光源，挡住的那束光张得越开，投在墙上就越大。）让她试试把两个纸偶一前一后，做出「远近层次」。</p></div>
@@ -81,17 +85,17 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <div class="safety"><b>安全：</b>玻璃镜子<b>边缘锋利、摔了会碎</b>，3 岁用不锈钢镜或包了边的塑料镜，碎玻璃要立刻彻底清干净。反射阳光时<b>绝不照向任何人的眼睛</b>（尤其别对着脸晃），也别长时间聚光在一处。别拿镜子直对太阳看。</div>
 </div>
 <svg aria-label="光反射示意：光照到镜面，来的角度等于弹走的角度" class="diagram" viewbox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#8a7a66" stroke-width="3" x1="60" x2="240" y1="100" y2="100"></line>
-<text fill="#8a7a66" font-size="9" text-anchor="middle" x="150" y="114">镜面</text>
-<line stroke="#cbb9a0" stroke-dasharray="3 3" stroke-width="1" x1="150" x2="150" y1="100" y2="40"></line>
-<path d="M90 40 L150 100" marker-end="url(#m)" stroke="#f0a030" stroke-width="2"></path>
-<path d="M150 100 L210 40" marker-end="url(#m2)" stroke="#3d8c6a" stroke-width="2"></path>
+<line stroke="#9c8c78" stroke-width="3" x1="60" x2="240" y1="100" y2="100"></line>
+<text fill="#9c8c78" font-size="9" text-anchor="middle" x="150" y="114">镜面</text>
+<line stroke="#6c5a41" stroke-dasharray="3 3" stroke-width="1" x1="150" x2="150" y1="100" y2="40"></line>
+<path d="M90 40 L150 100" marker-end="url(#m)" stroke="#d68616" stroke-width="2"></path>
+<path d="M150 100 L210 40" marker-end="url(#m2)" stroke="#72c19f" stroke-width="2"></path>
 <defs>
-<marker id="m" markerheight="7" markerwidth="7" orient="auto" refx="4" refy="6"><path d="M0 0 L6 0 L3 6 Z" fill="#f0a030"></path></marker>
-<marker id="m2" markerheight="7" markerwidth="7" orient="auto" refx="3" refy="1"><path d="M0 6 L6 6 L3 0 Z" fill="#3d8c6a"></path></marker>
+<marker id="m" markerheight="7" markerwidth="7" orient="auto" refx="4" refy="6"><path d="M0 0 L6 0 L3 6 Z" fill="#d68616"></path></marker>
+<marker id="m2" markerheight="7" markerwidth="7" orient="auto" refx="3" refy="1"><path d="M0 6 L6 6 L3 0 Z" fill="#72c19f"></path></marker>
 </defs>
 <text fill="#d96a2e" font-size="9" x="105" y="60">来</text>
-<text fill="#3d8c6a" font-size="9" x="190" y="60">弹回</text>
+<text fill="#72c19f" font-size="9" x="190" y="60">弹回</text>
 </svg>
 <div class="sec age3"><h3>3 岁版</h3><p>她负责「追光斑 + 照镜子」——你用镜子把阳光打到墙上变成一个亮点，让她去拍、去追，光斑一跳她就咯咯笑。再让她对着镜子做鬼脸、招手，看「镜子里那个小孩」一模一样地跟着做，她会盯着看好久。简单、安全、百玩不厌。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她负责「找规律」——两面镜子摆出不同夹角，记下每个角度能看到几个像（90 度看到 3 个，角度越小越多）。挑战她想：这不就是万花筒的原理吗？进阶玩潜望镜思路——两面镜子上下错开成 45 度，能不能「拐个弯」看到挡在前面的东西后面？让她动手摆摆看。</p></div>

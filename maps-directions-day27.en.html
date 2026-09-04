@@ -4,36 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Doing Together: Maps & Directions</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:360px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -55,7 +59,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <h3>Prep & Safety</h3>
     <p>Materials: a large-ish sheet (A4 or bigger), a few markers. How to play: draw home "as seen from the ceiling" — start with a big box for the living room, then add the sofa, TV, dining table, doors, and each room inside. The key is to guide the child to imagine: "If I were a little bird up on the ceiling looking down, what shape is the sofa?" — not drawn head-on, but as a top-down outline (sofa = a rectangle, round table = a circle). Tape it to the wall when done, and you've got a "family map."</p>
     <div class="safety"><b>Safety:</b> zero risk — it's just drawing. One reminder: have the child draw at the table, not on the floor where a pen might get stepped on; keep markers out of the 3-year-old's mouth.</div>
-    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">Roles:</b> the 9-year-old draws the big frame and labels the rooms; the 3-year-old colors and adds little icon stickers.</div>
+    <div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">Roles:</b> the 9-year-old draws the big frame and labels the rooms; the 3-year-old colors and adds little icon stickers.</div>
   </div>
   <div class="sec age3"><h3>Age 3</h3><p>She can't grasp a "top-down view" yet, so let her be the "coloring helper": once big sister draws the room frames, she fills in the colors (living room yellow, bedroom blue) and adds a sticker marking "my bed is here." Hold her finger and walk one lap around the real house — wherever you go, tap that spot on the paper: "We're in the kitchen now — tap the kitchen on the map." Matching "where we walked" to "where on the paper" is her biggest win.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She's the "cartographer": figure out the top-down outline and place the rooms in the right relative positions — living room in the middle, kitchen on the left, bedroom on the right, where the doors are. Challenge her to add a "sense of scale": the living room is bigger than the bathroom, so draw it bigger. Then add a "legend" (small square = bed, small circle = table). Ask her: <b>Why are maps always drawn from above, not head-on?</b> (Drawn head-on, things in back get hidden behind things in front and you can't tell what's next to what; from above, every object's position is clear and nothing overlaps — that's why all real maps are "bird's-eye." Two or three sentences is plenty.)</p></div>
@@ -71,7 +75,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <h3>Prep & Safety</h3>
     <p>Materials: a chopstick or small stick, a few pebbles as markers; sunshine is best, use a phone compass app on cloudy days. How to play (sunny version): stick the stick upright on an open bit of balcony or yard, place a pebble at the tip of its shadow as a marker; <b>come back after 15–20 minutes</b> — the shadow has moved, so place another pebble at the new tip. Connect the two pebbles into a line — that line is the "east–west" direction (the first pebble is toward the west, the later one toward the east, because the sun travels east to west and the shadow goes the opposite way). Stand on it facing north: right hand is east, left hand is west, back is south.</p>
     <div class="safety"><b>Safety:</b> outdoors, mind <b>sun protection, wear a hat, don't look straight at the sun</b> — just watch the shadow, never tilt your head up to stare at the sun. Plant the stick firmly so it won't jab a foot. The 15 minutes of waiting for the shadow is a perfect time to do Activity 1.</div>
-    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">Roles:</b> the 9-year-old plants the stick, draws the line, works out the directions; the 3-year-old places the pebble markers and is the "little alarm clock" reminding everyone to check the shadow.</div>
+    <div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">Roles:</b> the 9-year-old plants the stick, draws the line, works out the directions; the 3-year-old places the pebble markers and is the "little alarm clock" reminding everyone to check the shadow.</div>
   </div>
   <div class="sec age3"><h3>Age 3</h3><p>She's the "shadow marker": when big sister says "the shadow's tip is here," she sets down a pebble. She can't grasp the compass directions, but she can plainly see something magical — <b>the shadow quietly moves on its own</b>. Have her check every so often and gasp "the shadow ran away!" — that's enough. Then teach her to reach a hand toward the sun: "the sun slowly moves house," turning direction into something she can gesture with her little hands.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She's the "direction detective": plant the stick, place markers, draw the east-west line, deduce the four directions, then <b>mark them onto the family map from Activity 1</b> (draw a "north-pointing" arrow in the corner). Challenge her to remember the rule "up is north, down is south, left is west, right is east" — that's the map convention; the real world is checked against the sun or a compass. Ask her: <b>Why does the shadow move, and why does a compass always point north-south?</b> (The shadow moves because the Earth spins and the sun appears to go from east to west; a compass points north-south because the Earth itself is a giant magnet, and the little needle lines up along the Earth's magnetic field. Two or three sentences is plenty.)</p></div>
@@ -87,7 +91,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <h3>Prep & Safety</h3>
     <p>Materials: a few slips of paper, a pen, one small "treasure" (a piece of candy, a little toy — anything). How to play: one person is the "hider" who hides the treasure and draws a <b>treasure map</b> — you can reuse the family map from Activity 1 and draw a big "×" at the hiding spot; the advanced version is a "clue relay": the first slip hints "go to the fridge," the fridge has a second slip "look under the sofa," leading step by step to the treasure. The other person follows the map to find it, then swap hider and play a few rounds.</p>
     <div class="safety"><b>Safety:</b> the only risk is <b>getting so excited during the hunt that they charge around and bump a table corner or slip</b> — agree before you start: "walk to find it, no running." Don't hide the treasure anywhere risky — no climbing high, no drawer-pinched fingers, no going into the kitchen near the stove. If the treasure is candy, ask an adult first when found, and don't let the 3-year-old choke.</div>
-    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">Roles:</b> the 9-year-old draws the map and designs the clues; the 3-year-old hides, hunts, and plays "little detective" (on sister's team).</div>
+    <div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">Roles:</b> the 9-year-old draws the map and designs the clues; the 3-year-old hides, hunts, and plays "little detective" (on sister's team).</div>
   </div>
   <div class="sec age3"><h3>Age 3</h3><p>This is the one she's most excited about of the four. She can't read a map, so let big sister hold it as the "leader" while she's the "little detective" charging ahead to dig around. You can also give her a "one-step map": draw a big arrow pointing at the sofa, and she follows it over, lifts the cushion, and finds it. The cheer at finding the treasure is the best reward. When it's her turn to hide, help her draw an "×" — she'll feel she's holding a big secret.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She's the "master hider + puzzle-setter": design the hunt route, draw a map others can read, or write "clue relay" riddles ("I'm very cold and full of food inside" = the fridge). Challenge her to work in the directions from Activity 2: write a clue like "stand in front of the TV, walk three steps north, look east," forcing her to tie map, direction, and position all together. Ask her: <b>Why do real treasure maps often draw a north arrow and a scale bar?</b> (With a north arrow, others know which real-world direction the map's "up" faces; with a scale, they know how much real distance a short stretch on the map equals — without those two, you can't actually follow it. Two or three sentences is plenty.)</p></div>
@@ -103,7 +107,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <h3>Prep & Safety</h3>
     <p>Materials: a few pillows or plush toys on the floor as "obstacles," a toy on the table as the "goal." How to play: one person is the "robot" who only obeys three commands — "walk N steps," "turn left," "turn right"; the other is the "commander" who, using only their voice, guides the robot from start to goal step by step, around the obstacles. The robot must follow commands exactly; say a wrong one and you start over. It's a game that really puts "direction words" and "step counts" to use, and especially trains "seeing directions from someone else's point of view."</p>
     <div class="safety"><b>Safety:</b> use <b>soft obstacles (pillows, plush toys)</b>, no sharp-cornered hard objects. In the advanced "blindfold version," the robot walks blindfolded and an adult must <b>stay right beside them the whole time, ready to catch</b>, going slowly, never near stairs or table corners. No blindfold version for the 3-year-old.</div>
-    <div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">Roles:</b> the 9-year-old is the precise "commander" giving orders; the 3-year-old is the "robot" who follows commands, on the receiving end.</div>
+    <div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">Roles:</b> the 9-year-old is the precise "commander" giving orders; the 3-year-old is the "robot" who follows commands, on the receiving end.</div>
   </div>
   <div class="sec age3"><h3>Age 3</h3><p>She makes the perfect "little robot" — as long as she gets "go forward" and "stop," she can play. Don't ask her to tell left from right; just play "go and stop": big sister yells "go go go — stop!" and she obeys like an on/off switch, giggling nonstop. Let her be the "commander" once too, even if all she can do is point a finger "that way!" — pointing a direction is her way of expressing space, and that's already great.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>She's the star as "commander": rehearse the route in her head, work out "3 steps forward, turn right, 2 more steps forward," and — the hardest and most valuable part — <b>think from the robot's point of view: "which side is its left, from where I stand?"</b> Challenge her to use only commands, no finger-pointing, to deliver the robot precisely to the goal. Ask her: <b>Why isn't your "left" the same side as the facing robot's "left"?</b> ("Left and right" go with the body; standing face-to-face, you point opposite ways, so your left hand faces exactly their right side — which is why, to direct someone, you switch to "their" left and right. This is called perspective-taking, and it's where directions-giving so often goes wrong. Two or three sentences is plenty.)</p></div>

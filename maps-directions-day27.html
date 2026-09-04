@@ -5,36 +5,40 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>一起做：地图与方向</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:360px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -54,7 +58,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <h3>准备与安全</h3>
 <p>材料：一张大点的纸（A4 或更大）、几支彩笔。玩法：画一张「从天花板往下看」的家——先画客厅的大方框，再往里添沙发、电视、餐桌、门、每个房间。关键是引导孩子想象「假如我是天花板上的小鸟往下看，沙发是什么形状？」——不是从正面画，而是画俯视的轮廓（沙发=长方块、圆桌=圆圈）。画完贴墙上，「家庭地图」就有了。</p>
 <div class="safety"><b>安全：</b>本活动零风险，就是画画。唯一提醒：让孩子在桌上画，别趴地上一边画一边被人踩到笔；彩笔别让 3 岁往嘴里放。</div>
-<div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>画大框架、标房间名归 9 岁；涂色、贴小图标归 3 岁。</div>
+<div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">分工：</b>画大框架、标房间名归 9 岁；涂色、贴小图标归 3 岁。</div>
 </div>
 <div class="sec age3"><h3>3 岁版</h3><p>她理解不了「俯视图」，就让她当「涂色小工」：姐姐画好房间的框，她往里涂颜色（客厅涂黄、卧室涂蓝），再用小贴纸标出「我的床在这里」。拉着她的手指在真家里走一圈，走到哪就在纸上点一下：「走到厨房啦——地图上点一下厨房。」把「走到哪」和「纸上哪」对上，就是她最大的收获。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她是「制图师」：想清楚俯视的轮廓，把房间相对位置画对——客厅在中间、厨房在左、卧室在右，门开在哪。挑战她加「比例感」：客厅比卫生间大，画在纸上也得大些。再给地图加「图例」（小方块=床、小圆=桌子）。问她：<b>为什么地图都从上往下画？</b>（从正面画，后面的东西会被前面挡住、说不清谁在谁旁边；从上往下看每样东西位置一目了然、互不遮挡，所以所有真地图都是「鸟瞰」的，两三句够答。）</p></div>
@@ -69,7 +73,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <h3>准备与安全</h3>
 <p>材料：一根筷子或小木棍、几块小石头做记号；有太阳最好，阴天就用手机指南针 App。玩法（晴天版）：把小棍插在阳台或院子空地上，在影子顶端摆一块石头做记号；<b>过 15–20 分钟再来看</b>，影子动了，在新顶端再摆一块。两块石头连成一条线，就是「东—西」方向（先摆的靠西、后摆的靠东，因为太阳从东往西走、影子反着来）。站上去面朝北，右手是东、左手是西、背后是南。</p>
 <div class="safety"><b>安全：</b>户外注意<b>防晒、戴帽子、别直视太阳</b>——看影子就好，绝不抬头盯太阳。小棍插稳别扎脚。等影子的这 15 分钟，正好先去做活动 1。</div>
-<div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>插棍、连线、判断东西南北归 9 岁；摆石头记号、当「小闹钟」提醒该看影子了归 3 岁。</div>
+<div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">分工：</b>插棍、连线、判断东西南北归 9 岁；摆石头记号、当「小闹钟」提醒该看影子了归 3 岁。</div>
 </div>
 <div class="sec age3"><h3>3 岁版</h3><p>她当「影子记号员」：姐姐说「影子头在这里」，她就放一块小石头。她理解不了东南西北，但能直观看到一件神奇的事——<b>影子会自己悄悄移动</b>。让她隔一会儿看一眼，惊呼「影子跑啦！」就够了。再教她朝太阳伸手：「太阳会慢慢搬家」，把方向变成能用小手比划的东西。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她是「方向侦探」：插棍、摆记号、连东西线、推出四个方向，再<b>标到活动 1 的家庭地图上</b>（角上画个「指北针」箭头）。挑战她记口诀「上北下南、左西右东」——这是地图的规矩，真实世界则靠太阳或指南针去对。问她：<b>影子为什么会移动、指南针为什么总指南北？</b>（影子动，是因为地球自转、太阳看起来从东走到西；指南针指南北，是因为地球本身是块大磁铁，小磁针会顺着地球磁场排好队，两三句够答。）</p></div>
@@ -84,7 +88,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <h3>准备与安全</h3>
 <p>材料：几张小纸条、一支笔、一件「宝物」（一块糖、一个小玩具都行）。玩法：一个人当「藏宝人」把宝物藏起来，画一张<b>寻宝地图</b>——可直接用活动 1 的家庭地图，在藏宝点画个大「×」；进阶玩「线索接力」：第一张纸提示「去冰箱」，冰箱上贴第二张「看沙发底下」，一步步引到宝物。另一人拿地图去找，找到就换人藏，玩几轮。</p>
 <div class="safety"><b>安全：</b>唯一风险是<b>找宝时太兴奋乱冲、磕桌角滑倒</b>——开始前约定「走着找、不许跑」。宝物别藏在要爬高、翻抽屉夹手、或进厨房动灶台的危险位置。宝物若是糖果，找到后先问大人、别噎着 3 岁。</div>
-<div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>画地图、设计线索归 9 岁；藏宝、找宝、当「小侦探」归 3 岁（和姐姐一队）。</div>
+<div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">分工：</b>画地图、设计线索归 9 岁；藏宝、找宝、当「小侦探」归 3 岁（和姐姐一队）。</div>
 </div>
 <div class="sec age3"><h3>3 岁版</h3><p>这是四个活动里她最兴奋的一个。她看不懂地图，就让姐姐拿地图当「领队」，她当「小侦探」冲在前面翻找。也可以给她一张「一步地图」：画个大箭头指向沙发，她顺着走过去掀开就找到。找到宝物的欢呼就是最好的奖励。轮到她藏宝时帮她画个「×」，她会觉得掌握了大秘密。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她是「藏宝大师 + 出题人」：设计寻宝路线，画一张别人看得懂的地图，或写「线索接力」谜题（「我很冷，肚子里装吃的」=冰箱）。挑战她把活动 2 的方向用进去：线索写「站在电视前朝北走三步，往东看」，逼她把地图、方向、位置全串起来。问她：<b>为什么真宝藏地图常画指北针和比例尺？</b>（有指北针，别人才知道地图的「上」对着真实世界哪个方向；有比例尺，才知道图上一小段等于实际多少距离——没这两样就没法照着走，两三句够答。）</p></div>
@@ -99,7 +103,7 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 <h3>准备与安全</h3>
 <p>材料：几个抱枕、玩偶摆地上当「障碍」，桌上放一个玩具当「终点」。玩法：一个人当「机器人」，只听三种口令——「前进几步」「左转」「右转」；另一个当「指挥官」，光靠嘴把机器人从起点一步步指挥到终点、绕开障碍。机器人只能严格照口令走，说错就重来。这是把「方向词」和「步数」真正用起来、特别锻炼「站在别人角度看方向」的游戏。</p>
 <div class="safety"><b>安全：</b>障碍物用<b>软的（抱枕、毛绒玩具）</b>，别用尖角硬物。玩进阶「蒙眼版」时，机器人蒙眼走，大人必须<b>全程守在旁边随时能扶</b>，速度要慢，绝不在有楼梯、桌角处玩蒙眼版。3 岁不玩蒙眼版。</div>
-<div class="safety" style="background:#f4f9f6;border-left-color:#3d8c6a"><b style="color:#3d8c6a">分工：</b>当精确的「指挥官」发口令归 9 岁；当「机器人」听令走、当被指挥的一方归 3 岁。</div>
+<div class="safety" style="background:#0b220c;border-left-color:#72c19f"><b style="color:#72c19f">分工：</b>当精确的「指挥官」发口令归 9 岁；当「机器人」听令走、当被指挥的一方归 3 岁。</div>
 </div>
 <div class="sec age3"><h3>3 岁版</h3><p>她当「小机器人」最合适——听懂「往前走」「停」就能玩。别要求她分左右，就玩「前进和停」：姐姐喊「走走走——停！」她像开关一样照做，会咯咯笑个不停。反过来让她当一次「指挥官」也行，哪怕她只会用手指「往那边！」——用手指方向就是在表达空间，已经很棒了。</p></div>
 <div class="sec age9"><h3>9 岁版</h3><p>她当「指挥官」是主角：在脑子里预演路线，算好「前进 3 步、右转、再前进 2 步」，还得<b>站在机器人角度想「它的左是我哪边」</b>——这是最难也最长本事的一点。挑战她只用口令、不用手指，把机器人精准送到终点。问她：<b>为什么你的「左」和对面机器人的「左」不是同一边？</b>（「左右」跟着身体走，你俩面对面站朝向相反，你的左手正对着他的右手边——所以指挥别人得换成「他的」左右，这叫「换位思考」，指路老出错就栽在这儿，两三句够答。）</p></div>

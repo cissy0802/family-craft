@@ -4,36 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Doing Together: Repair &amp; Take-Apart</title>
+<meta content="#0b200b" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#fffaf0;color:#3d3328;line-height:1.85}
+body{font-family:-apple-system,"Noto Sans SC","Segoe UI",Roboto,sans-serif;background:#0b200b;color:#cac0b5;line-height:1.85}
 .container{max-width:720px;margin:0 auto;padding:24px 20px 60px}
 header{text-align:center;padding:40px 0 24px}
 header h1{font-size:1.7rem;font-weight:800;color:#e8743b;letter-spacing:1px}
-header .meta{margin-top:10px;font-size:0.9rem;color:#8a7a66}
-.intro{background:#fff;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#5a4d3c}
-.card{background:#fff;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+header .meta{margin-top:10px;font-size:0.9rem;color:#9c8c78}
+.intro{background:#050f05;border-radius:12px;padding:18px 20px;margin:20px 0 8px;box-shadow:0 1px 8px rgba(0,0,0,0.05);font-size:0.96rem;color:#bcaf9e}
+.card{background:#050f05;border-radius:14px;padding:22px 22px 24px;margin:22px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .card h2{font-size:1.25rem;color:#e8743b;font-weight:800}
 .card h2 .en{display:block;font-size:0.82rem;color:#b0a08c;font-weight:600;margin-top:2px;letter-spacing:0.5px}
 .tags{margin:12px 0 16px}
-.tag{display:inline-block;background:#fdf0e6;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
-.tag.g{background:#e6f4ee;color:#3d8c6a}
+.tag{display:inline-block;background:#281b11;color:#d96a2e;font-size:0.78rem;padding:3px 10px;border-radius:20px;margin:0 6px 6px 0;font-weight:600}
+.tag.g{background:#142e15;color:#72c19f}
 .sec{margin:14px 0}
 .sec h3{font-size:0.98rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:7px}
-.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#e8743b;flex-shrink:0}
-.sec.age3 h3::before{background:#f0a030}
-.sec.age9 h3::before{background:#4aa37a}
-.sec.both h3::before{background:#e8743b}
-.sec.why h3::before{background:#9b8cd0}
-.sec p{font-size:0.95rem;color:#4a4031}
-.safety{background:#fff6f2;border-left:4px solid #e8743b;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#6a5544;margin:10px 0}
-.safety b{color:#d04a2a}
+.sec h3::before{content:"";width:8px;height:8px;border-radius:50%;background:#b7430a;flex-shrink:0}
+.sec.age3 h3::before{background:#c17101}
+.sec.age9 h3::before{background:#348d64}
+.sec.both h3::before{background:#b7430a}
+.sec.why h3::before{background:#4a3b7f}
+.sec p{font-size:0.95rem;color:#c4baab}
+.safety{background:#0a1e0b;border-left:4px solid #cc581f;border-radius:6px;padding:12px 14px;font-size:0.9rem;color:#b7a291;margin:10px 0}
+.safety b{color:#d95333}
 .diagram{display:block;margin:14px auto;max-width:360px}
 ul{margin:4px 0 4px 20px}
 li{font-size:0.94rem;margin:3px 0}
-.pick{background:#e6f4ee;border-radius:14px;padding:20px 22px;margin-top:28px}
-.pick h2{color:#3d8c6a;font-size:1.15rem;margin-bottom:8px}
-.pick p{font-size:0.96rem;color:#3f5a4d}
+.pick{background:#142e15;border-radius:14px;padding:20px 22px;margin-top:28px}
+.pick h2{color:#72c19f;font-size:1.15rem;margin-bottom:8px}
+.pick p{font-size:0.96rem;color:#9fbaad}
 footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:18px 16px}}
 </style>
@@ -57,18 +61,18 @@ footer{text-align:center;padding:30px 0 6px;font-size:0.82rem;color:#c4b5a0}
     <div class="safety"><b>Safety:</b> Only open <b>battery-powered</b> small toys. <b>Never open anything that plugs into the wall — no microwaves, TVs, cameras, or old power supplies</b> — these hold large capacitors that can store dangerous charge even after being unplugged. No exceptions. The screwdriver tip is sharp; point it down and never at anyone. The <b>small parts and button batteries are a serious choking/swallowing hazard for a 3-year-old</b> — a swallowed button battery can burn through the esophagus, so supervise the whole time and clear them away the moment you're done. Metal edges and broken bits can cut; remind them not to touch broken edges. Don't pick at a leaking battery with bare hands — grab it through a tissue.</div>
   </div>
   <svg class="diagram" viewBox="0 0 360 110" xmlns="http://www.w3.org/2000/svg" aria-label="Three steps to take a toy apart">
-    <rect x="14" y="25" width="70" height="55" rx="6" fill="#fdf0e6" stroke="#e8743b" stroke-width="2"/>
-    <circle cx="30" cy="38" r="3" fill="#8a7a66"/><circle cx="68" cy="38" r="3" fill="#8a7a66"/>
-    <circle cx="30" cy="68" r="3" fill="#8a7a66"/><circle cx="68" cy="68" r="3" fill="#8a7a66"/>
-    <text x="49" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">① find the corner screws</text>
-    <path d="M150 30 l18 0 0 -10 8 0 0 26 -8 0 0 -10 -18 0 z" fill="#4aa37a"/>
-    <line x1="176" y1="48" x2="200" y2="48" stroke="#8a7a66" stroke-width="2"/>
-    <circle cx="158" cy="70" r="4" fill="#e8743b"/><circle cx="170" cy="70" r="4" fill="#e8743b"/>
-    <text x="170" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">② unscrew, save the screws</text>
-    <circle cx="285" cy="42" r="14" fill="#fff" stroke="#4aa37a" stroke-width="2"/>
-    <circle cx="285" cy="42" r="4" fill="#4aa37a"/>
-    <rect x="265" y="62" width="44" height="22" rx="3" fill="#e6f4ee" stroke="#3d8c6a"/>
-    <text x="287" y="100" font-size="10" fill="#8a7a66" text-anchor="middle">③ look inside: motor · board</text>
+    <rect x="14" y="25" width="70" height="55" rx="6" fill="#281b11" stroke="#cc581f" stroke-width="2"/>
+    <circle cx="30" cy="38" r="3" fill="#9c8c78"/><circle cx="68" cy="38" r="3" fill="#9c8c78"/>
+    <circle cx="30" cy="68" r="3" fill="#9c8c78"/><circle cx="68" cy="68" r="3" fill="#9c8c78"/>
+    <text x="49" y="100" font-size="10" fill="#9c8c78" text-anchor="middle">① find the corner screws</text>
+    <path d="M150 30 l18 0 0 -10 8 0 0 26 -8 0 0 -10 -18 0 z" fill="#5fb88f"/>
+    <line x1="176" y1="48" x2="200" y2="48" stroke="#9c8c78" stroke-width="2"/>
+    <circle cx="158" cy="70" r="4" fill="#cc581f"/><circle cx="170" cy="70" r="4" fill="#cc581f"/>
+    <text x="170" y="100" font-size="10" fill="#9c8c78" text-anchor="middle">② unscrew, save the screws</text>
+    <circle cx="285" cy="42" r="14" fill="#0a0a0a" stroke="#5fb88f" stroke-width="2"/>
+    <circle cx="285" cy="42" r="4" fill="#5fb88f"/>
+    <rect x="265" y="62" width="44" height="22" rx="3" fill="#142e15" stroke="#72c19f"/>
+    <text x="287" y="100" font-size="10" fill="#9c8c78" text-anchor="middle">③ look inside: motor · board</text>
   </svg>
   <div class="sec age3"><h3>Age 3</h3><p>Her job is "spin it out + sort it." You loosen each screw half a turn first, then let her use the screwdriver (or just her fingers) to spin it the rest of the way until it drops out — that "looser, looser, plink!" moment delights her for ages. Let her be the "parts manager," sorting the screws and gears into different compartments of the box by size or color. She can also spin the gears and press the buttons to hear if anything still makes noise. No small part goes in the mouth — watch that the entire time.</p></div>
   <div class="sec age9"><h3>Age 9</h3><p>Her job is "lead the teardown + draw the map." She picks the screwdriver, unscrews in order, and tracks which screw came from where (she can sketch a diagram and mark each screw as she removes it — that's a real repair-tech skill). Challenge: find the motor, trace its two wires, and figure out why it spins when the battery's connected. Why are the gears different sizes meshed together (to change speed/force)? Then try putting part of it back together — to feel how "taking apart is easy, reassembling is the hard part."</p></div>
